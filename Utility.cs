@@ -5,8 +5,7 @@ using System.Text;
 using System.Security.Cryptography;
 using System.Security;
 //using AxTINYLib;
-using TINYLib;
-using AxTINYLib;
+
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Threading.Tasks;
@@ -21,18 +20,18 @@ namespace DBSec
 {
     class Utility
     {
-        public static SecureString passPhrase; /*= System.Text.Encoding.Unicode.GetBytes("Salt Is Not A Password");*/
-        public static SecureString PharmacySerial;
+        public static SecureString passPhrase = ToSecureString("AReallyStr0ngK#y4You"); /*= System.Text.Encoding.Unicode.GetBytes("Salt Is Not A Password");*/
+        public static string DbName;
         public static SecureString HostPass;
         
         public static string ftpAddress= "ftp://bastanisoft.ir/";
 
         // 
         // //public static AxTiny Tn = new AxTiny();
-        public static string MakeConnectionStr(string address, string db, string pass,string user="BastaniTeb")
+        public static string MakeConnectionStr(string address, string db, SecureString pass,string user="sa")
 
         {
-            return string.Format(string.Format(@"Password={0};Persist Security Info=True;User ID={3};Initial Catalog={1};Data Source={2};Application Name={0}", pass.Trim(), db.Trim(), address.Trim(),user));
+            return string.Format(string.Format(@"Password={0};Persist Security Info=True;User ID={3};Initial Catalog={1};Data Source={2};Application Name={0}", ToInsecureString(pass).Trim(), db.Trim(), address.Trim(),user));
         }
         public static async Task<string> TestDbConnection(string connstr)
         {
@@ -295,90 +294,90 @@ namespace DBSec
             }
 
         }
-        public static async Task<string> PutFileInFTP(string localFilePath,string pharmacySerial, string address = "ftp://bastanisoft.ir/upload/", string userName = "Bastanis")
-        {
+        //public static async Task<string> PutFileInFTP(string localFilePath,string pharmacySerial, string address = "ftp://bastanisoft.ir/upload/", string userName = "Bastanis")
+        //{
 
-            try
-            {
-                using (WebClient client = new WebClient())
-                {
-                    client.Credentials = new NetworkCredential(userName,  Utility.ToInsecureString(Utility.HostPass));
+        //    try
+        //    {
+        //        using (WebClient client = new WebClient())
+        //        {
+        //            client.Credentials = new NetworkCredential(userName,  Utility.ToInsecureString(Utility.HostPass));
                     
-                    string filename=localFilePath.Split('\\').Last();
-                    StringBuilder result = new StringBuilder();
-                    FtpWebRequest requestDir = (FtpWebRequest)WebRequest.Create(address);
-                    requestDir.Method = WebRequestMethods.Ftp.ListDirectory;
-                    requestDir.Credentials = new NetworkCredential(userName,  Utility.ToInsecureString(Utility.HostPass));
+        //            string filename=localFilePath.Split('\\').Last();
+        //            StringBuilder result = new StringBuilder();
+        //            FtpWebRequest requestDir = (FtpWebRequest)WebRequest.Create(address);
+        //            requestDir.Method = WebRequestMethods.Ftp.ListDirectory;
+        //            requestDir.Credentials = new NetworkCredential(userName,  Utility.ToInsecureString(Utility.HostPass));
 
-                    FtpWebResponse responseDir = (FtpWebResponse)requestDir.GetResponse();
-                    StreamReader readerDir = new StreamReader(responseDir.GetResponseStream());
+        //            FtpWebResponse responseDir = (FtpWebResponse)requestDir.GetResponse();
+        //            StreamReader readerDir = new StreamReader(responseDir.GetResponseStream());
 
-                    string line = readerDir.ReadLine();
+        //            string line = readerDir.ReadLine();
 
-                    while (line != null)
-                    {
-                        result.Append(line);
-                        result.Append("\n");
-                        line = readerDir.ReadLine();
-                    }
+        //            while (line != null)
+        //            {
+        //                result.Append(line);
+        //                result.Append("\n");
+        //                line = readerDir.ReadLine();
+        //            }
 
-                    var s= result.Remove(result.ToString().LastIndexOf('\n'), 1);
-                    responseDir.Close();
-                    if (result.ToString().Split('\n').Contains(pharmacySerial) == true)
-                        client.UploadFile(address + "/" + pharmacySerial +"/"+ filename, WebRequestMethods.Ftp.UploadFile, localFilePath);
-                    else
-                    {
+        //            var s= result.Remove(result.ToString().LastIndexOf('\n'), 1);
+        //            responseDir.Close();
+        //            if (result.ToString().Split('\n').Contains(pharmacySerial) == true)
+        //                client.UploadFile(address + "/" + pharmacySerial +"/"+ filename, WebRequestMethods.Ftp.UploadFile, localFilePath);
+        //            else
+        //            {
 
-                        requestDir =(FtpWebRequest) WebRequest.Create(address+"/"+pharmacySerial);
+        //                requestDir =(FtpWebRequest) WebRequest.Create(address+"/"+pharmacySerial);
                         
-                        requestDir.Method = WebRequestMethods.Ftp.MakeDirectory;
-                        requestDir.Credentials = new NetworkCredential(userName, Utility.ToInsecureString(Utility.HostPass));
-                        using (var resp = (FtpWebResponse)requestDir.GetResponse())
-                        {
+        //                requestDir.Method = WebRequestMethods.Ftp.MakeDirectory;
+        //                requestDir.Credentials = new NetworkCredential(userName, Utility.ToInsecureString(Utility.HostPass));
+        //                using (var resp = (FtpWebResponse)requestDir.GetResponse())
+        //                {
                            
-                            var statusCode = resp.StatusCode;
-                            if(statusCode==FtpStatusCode.PathnameCreated)
-                            {
-                                client.UploadFile(address + "/" + pharmacySerial +"/"+ filename, WebRequestMethods.Ftp.UploadFile, localFilePath);
+        //                    var statusCode = resp.StatusCode;
+        //                    if(statusCode==FtpStatusCode.PathnameCreated)
+        //                    {
+        //                        client.UploadFile(address + "/" + pharmacySerial +"/"+ filename, WebRequestMethods.Ftp.UploadFile, localFilePath);
 
-                            }else
-                            {
-                                return statusCode.ToString();
-                            }
-                        }
-                    }
-                    return filename+" با موفقیت بر روی هاست قرار گرفت";
-                }
+        //                    }else
+        //                    {
+        //                        return statusCode.ToString();
+        //                    }
+        //                }
+        //            }
+        //            return filename+" با موفقیت بر روی هاست قرار گرفت";
+        //        }
 
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return ex.Message;
+        //    }
 
-            //StringBuilder result = new StringBuilder();
-            //FtpWebRequest requestDir = (FtpWebRequest)WebRequest.Create(address);
-            //requestDir.Method = WebRequestMethods.Ftp.ListDirectory;
-            //requestDir.Credentials = new NetworkCredential(user,password);
+        //    //StringBuilder result = new StringBuilder();
+        //    //FtpWebRequest requestDir = (FtpWebRequest)WebRequest.Create(address);
+        //    //requestDir.Method = WebRequestMethods.Ftp.ListDirectory;
+        //    //requestDir.Credentials = new NetworkCredential(user,password);
 
-            //FtpWebResponse responseDir = (FtpWebResponse)requestDir.GetResponse();
-            //StreamReader readerDir = new StreamReader(responseDir.GetResponseStream());
+        //    //FtpWebResponse responseDir = (FtpWebResponse)requestDir.GetResponse();
+        //    //StreamReader readerDir = new StreamReader(responseDir.GetResponseStream());
 
-            //string line = readerDir.ReadLine();
-            //while (line != null)
-            //{
-            //    result.Append(line);
-            //    result.Append("\n");
-            //    line = readerDir.ReadLine();
-            //}
+        //    //string line = readerDir.ReadLine();
+        //    //while (line != null)
+        //    //{
+        //    //    result.Append(line);
+        //    //    result.Append("\n");
+        //    //    line = readerDir.ReadLine();
+        //    //}
 
-            //result.Remove(result.ToString().LastIndexOf('\n'), 1);
-            //responseDir.Close();
-            //if(result.ToString().Split('\n').Contains(folderName)==true)
-            //{
+        //    //result.Remove(result.ToString().LastIndexOf('\n'), 1);
+        //    //responseDir.Close();
+        //    //if(result.ToString().Split('\n').Contains(folderName)==true)
+        //    //{
 
-            //}
-        }
+        //    //}
+        //}
       
         private static byte[] Generate256BitsOfRandomEntropy()
         {

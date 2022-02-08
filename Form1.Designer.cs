@@ -1,6 +1,5 @@
 ﻿using System.Windows.Forms;
-using AxTINYLib;
-using TINYLib;
+
 
 namespace DBSec
 {
@@ -34,20 +33,21 @@ namespace DBSec
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_backupCertificate = new System.Windows.Forms.Button();
             this.SecTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chk_copyDbToHost = new System.Windows.Forms.CheckBox();
+            this.chk_copyToHost = new System.Windows.Forms.CheckBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
+            this.txt_certificatePath = new System.Windows.Forms.TextBox();
+            this.btn_BrowsePathForEncrypt = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_encrypt = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -56,42 +56,42 @@ namespace DBSec
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txt_certificateBackupPath = new System.Windows.Forms.TextBox();
+            this.btn_browseForCertificateBak = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txt_dbRestoreName = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btn_dbRestorePath = new System.Windows.Forms.Button();
+            this.txt_dbRestorePath = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
+            this.txt_privateKeyRestorePath = new System.Windows.Forms.TextBox();
+            this.btn_privateKeyRestorePath = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
+            this.txt_certificateRestorePath = new System.Windows.Forms.TextBox();
+            this.btn_certificateRestorePath = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_restore = new System.Windows.Forms.Button();
+            this.txt_masterKeyRestorePath = new System.Windows.Forms.TextBox();
+            this.btn_masterKeyRestorePath = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_tinyAddress = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_encryptConfigFile = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txt_ConfigFilePath = new System.Windows.Forms.TextBox();
+            this.btn_ConfigFilePath = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label24 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btn_unlockSql = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_ServerIP = new System.Windows.Forms.TextBox();
@@ -100,11 +100,13 @@ namespace DBSec
             this.button6 = new System.Windows.Forms.Button();
             this.TinyCode = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txt_DbPass = new System.Windows.Forms.TextBox();
             this.txt_DB = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_testDb = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_CurrentSaPassword = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
@@ -118,7 +120,7 @@ namespace DBSec
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btn_changeSa = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -128,7 +130,6 @@ namespace DBSec
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Tn = new AxTINYLib.AxTiny();
             this.SecTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -143,20 +144,20 @@ namespace DBSec
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel5.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Tn)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_backupCertificate
             // 
-            this.button1.BackColor = System.Drawing.Color.OrangeRed;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btn_backupCertificate.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.btn_backupCertificate, "btn_backupCertificate");
+            this.btn_backupCertificate.Name = "btn_backupCertificate";
+            this.btn_backupCertificate.UseVisualStyleBackColor = false;
+            this.btn_backupCertificate.Click += new System.EventHandler(this.Button1_Click);
             // 
             // SecTab
             // 
             this.SecTab.Controls.Add(this.tabPage1);
+            this.SecTab.Controls.Add(this.tabPage6);
             this.SecTab.Controls.Add(this.tabPage2);
             this.SecTab.Controls.Add(this.tabPage3);
             this.SecTab.Controls.Add(this.tabPage5);
@@ -167,35 +168,35 @@ namespace DBSec
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.checkBox3);
-            this.tabPage1.Controls.Add(this.checkBox2);
+            this.tabPage1.Controls.Add(this.chk_copyDbToHost);
+            this.tabPage1.Controls.Add(this.chk_copyToHost);
             this.tabPage1.Controls.Add(this.label32);
             this.tabPage1.Controls.Add(this.label28);
             this.tabPage1.Controls.Add(this.label27);
             this.tabPage1.Controls.Add(this.label26);
             this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.button11);
+            this.tabPage1.Controls.Add(this.txt_certificatePath);
+            this.tabPage1.Controls.Add(this.btn_BrowsePathForEncrypt);
             this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.button7);
+            this.tabPage1.Controls.Add(this.btn_encrypt);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chk_copyDbToHost
             // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chk_copyDbToHost, "chk_copyDbToHost");
+            this.chk_copyDbToHost.Name = "chk_copyDbToHost";
+            this.chk_copyDbToHost.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chk_copyToHost
             // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
+            resources.ApplyResources(this.chk_copyToHost, "chk_copyToHost");
+            this.chk_copyToHost.Checked = true;
+            this.chk_copyToHost.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chk_copyToHost.Name = "chk_copyToHost";
+            this.chk_copyToHost.UseVisualStyleBackColor = true;
+            this.chk_copyToHost.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
             // 
             // label32
             // 
@@ -212,7 +213,6 @@ namespace DBSec
             // 
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label26
             // 
@@ -224,18 +224,18 @@ namespace DBSec
             resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
             // 
-            // textBox5
+            // txt_certificatePath
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            resources.ApplyResources(this.txt_certificatePath, "txt_certificatePath");
+            this.txt_certificatePath.Name = "txt_certificatePath";
             // 
-            // button11
+            // btn_BrowsePathForEncrypt
             // 
-            this.button11.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.Button11_Click);
+            this.btn_BrowsePathForEncrypt.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_BrowsePathForEncrypt, "btn_BrowsePathForEncrypt");
+            this.btn_BrowsePathForEncrypt.Name = "btn_BrowsePathForEncrypt";
+            this.btn_BrowsePathForEncrypt.UseVisualStyleBackColor = false;
+            this.btn_BrowsePathForEncrypt.Click += new System.EventHandler(this.Button11_Click);
             // 
             // label12
             // 
@@ -244,13 +244,19 @@ namespace DBSec
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label12.Name = "label12";
             // 
-            // button7
+            // btn_encrypt
             // 
-            this.button7.BackColor = System.Drawing.Color.OrangeRed;
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.Button7_Click);
+            this.btn_encrypt.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.btn_encrypt, "btn_encrypt");
+            this.btn_encrypt.Name = "btn_encrypt";
+            this.btn_encrypt.UseVisualStyleBackColor = false;
+            this.btn_encrypt.Click += new System.EventHandler(this.btn_encrypt_Click);
+            // 
+            // tabPage6
+            // 
+            resources.ApplyResources(this.tabPage6, "tabPage6");
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -258,7 +264,6 @@ namespace DBSec
             this.tabPage2.Controls.Add(this.groupBox1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Click += new System.EventHandler(this.TabPage2_Click);
             // 
             // groupBox1
             // 
@@ -268,9 +273,9 @@ namespace DBSec
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btn_backupCertificate);
+            this.groupBox1.Controls.Add(this.txt_certificateBackupPath);
+            this.groupBox1.Controls.Add(this.btn_browseForCertificateBak);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -280,7 +285,6 @@ namespace DBSec
             resources.ApplyResources(this.checkBox4, "checkBox4");
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -301,7 +305,6 @@ namespace DBSec
             resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.Green;
             this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -314,45 +317,44 @@ namespace DBSec
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // textBox1
+            // txt_certificateBackupPath
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.txt_certificateBackupPath, "txt_certificateBackupPath");
+            this.txt_certificateBackupPath.Name = "txt_certificateBackupPath";
             // 
-            // button2
+            // btn_browseForCertificateBak
             // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btn_browseForCertificateBak.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_browseForCertificateBak, "btn_browseForCertificateBak");
+            this.btn_browseForCertificateBak.Name = "btn_browseForCertificateBak";
+            this.btn_browseForCertificateBak.UseVisualStyleBackColor = false;
+            this.btn_browseForCertificateBak.Click += new System.EventHandler(this.Button2_Click);
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBox13);
+            this.tabPage3.Controls.Add(this.txt_dbRestoreName);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.label31);
             this.tabPage3.Controls.Add(this.panel4);
             this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.textBox8);
-            this.tabPage3.Controls.Add(this.button14);
+            this.tabPage3.Controls.Add(this.txt_privateKeyRestorePath);
+            this.tabPage3.Controls.Add(this.btn_privateKeyRestorePath);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.textBox6);
-            this.tabPage3.Controls.Add(this.button12);
+            this.tabPage3.Controls.Add(this.txt_certificateRestorePath);
+            this.tabPage3.Controls.Add(this.btn_certificateRestorePath);
             this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.button9);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.btn_restore);
+            this.tabPage3.Controls.Add(this.txt_masterKeyRestorePath);
+            this.tabPage3.Controls.Add(this.btn_masterKeyRestorePath);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // textBox13
+            // txt_dbRestoreName
             // 
-            resources.ApplyResources(this.textBox13, "textBox13");
-            this.textBox13.Name = "textBox13";
+            resources.ApplyResources(this.txt_dbRestoreName, "txt_dbRestoreName");
+            this.txt_dbRestoreName.Name = "txt_dbRestoreName";
             // 
             // label29
             // 
@@ -368,8 +370,8 @@ namespace DBSec
             // 
             this.panel4.Controls.Add(this.radioButton2);
             this.panel4.Controls.Add(this.radioButton1);
-            this.panel4.Controls.Add(this.button13);
-            this.panel4.Controls.Add(this.textBox7);
+            this.panel4.Controls.Add(this.btn_dbRestorePath);
+            this.panel4.Controls.Add(this.txt_dbRestorePath);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
@@ -389,36 +391,36 @@ namespace DBSec
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // button13
+            // btn_dbRestorePath
             // 
-            this.button13.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.Button13_Click);
+            this.btn_dbRestorePath.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_dbRestorePath, "btn_dbRestorePath");
+            this.btn_dbRestorePath.Name = "btn_dbRestorePath";
+            this.btn_dbRestorePath.UseVisualStyleBackColor = false;
+            this.btn_dbRestorePath.Click += new System.EventHandler(this.Button13_Click);
             // 
-            // textBox7
+            // txt_dbRestorePath
             // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
+            resources.ApplyResources(this.txt_dbRestorePath, "txt_dbRestorePath");
+            this.txt_dbRestorePath.Name = "txt_dbRestorePath";
             // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
             // 
-            // textBox8
+            // txt_privateKeyRestorePath
             // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
+            resources.ApplyResources(this.txt_privateKeyRestorePath, "txt_privateKeyRestorePath");
+            this.txt_privateKeyRestorePath.Name = "txt_privateKeyRestorePath";
             // 
-            // button14
+            // btn_privateKeyRestorePath
             // 
-            this.button14.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.Button14_Click);
+            this.btn_privateKeyRestorePath.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_privateKeyRestorePath, "btn_privateKeyRestorePath");
+            this.btn_privateKeyRestorePath.Name = "btn_privateKeyRestorePath";
+            this.btn_privateKeyRestorePath.UseVisualStyleBackColor = false;
+            this.btn_privateKeyRestorePath.Click += new System.EventHandler(this.Button14_Click);
             // 
             // label16
             // 
@@ -430,63 +432,60 @@ namespace DBSec
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
             // 
-            // textBox6
+            // txt_certificateRestorePath
             // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
+            resources.ApplyResources(this.txt_certificateRestorePath, "txt_certificateRestorePath");
+            this.txt_certificateRestorePath.Name = "txt_certificateRestorePath";
             // 
-            // button12
+            // btn_certificateRestorePath
             // 
-            this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.Button12_Click);
+            this.btn_certificateRestorePath.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_certificateRestorePath, "btn_certificateRestorePath");
+            this.btn_certificateRestorePath.Name = "btn_certificateRestorePath";
+            this.btn_certificateRestorePath.UseVisualStyleBackColor = false;
+            this.btn_certificateRestorePath.Click += new System.EventHandler(this.Button12_Click);
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
             // 
-            // button9
+            // btn_restore
             // 
-            this.button9.BackColor = System.Drawing.Color.OrangeRed;
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            this.btn_restore.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.btn_restore, "btn_restore");
+            this.btn_restore.Name = "btn_restore";
+            this.btn_restore.UseVisualStyleBackColor = false;
+            this.btn_restore.Click += new System.EventHandler(this.Button9_Click);
             // 
-            // textBox2
+            // txt_masterKeyRestorePath
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
+            resources.ApplyResources(this.txt_masterKeyRestorePath, "txt_masterKeyRestorePath");
+            this.txt_masterKeyRestorePath.Name = "txt_masterKeyRestorePath";
             // 
-            // button3
+            // btn_masterKeyRestorePath
             // 
-            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.Button3_Click_1);
+            this.btn_masterKeyRestorePath.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_masterKeyRestorePath, "btn_masterKeyRestorePath");
+            this.btn_masterKeyRestorePath.Name = "btn_masterKeyRestorePath";
+            this.btn_masterKeyRestorePath.UseVisualStyleBackColor = false;
+            this.btn_masterKeyRestorePath.Click += new System.EventHandler(this.Button3_Click_1);
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.Tn);
             this.tabPage5.Controls.Add(this.label21);
             this.tabPage5.Controls.Add(this.label20);
             this.tabPage5.Controls.Add(this.label19);
             this.tabPage5.Controls.Add(this.label18);
-            this.tabPage5.Controls.Add(this.textBox9);
+            this.tabPage5.Controls.Add(this.txt_tinyAddress);
             this.tabPage5.Controls.Add(this.label9);
-            this.tabPage5.Controls.Add(this.button5);
+            this.tabPage5.Controls.Add(this.btn_encryptConfigFile);
             this.tabPage5.Controls.Add(this.label5);
-            this.tabPage5.Controls.Add(this.textBox3);
-            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.txt_ConfigFilePath);
+            this.tabPage5.Controls.Add(this.btn_ConfigFilePath);
             resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // label21
             // 
@@ -511,47 +510,47 @@ namespace DBSec
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
             // 
-            // textBox9
+            // txt_tinyAddress
             // 
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
+            resources.ApplyResources(this.txt_tinyAddress, "txt_tinyAddress");
+            this.txt_tinyAddress.Name = "txt_tinyAddress";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
-            // button5
+            // btn_encryptConfigFile
             // 
-            this.button5.BackColor = System.Drawing.Color.OrangeRed;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.btn_encryptConfigFile.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.btn_encryptConfigFile, "btn_encryptConfigFile");
+            this.btn_encryptConfigFile.ForeColor = System.Drawing.Color.Black;
+            this.btn_encryptConfigFile.Name = "btn_encryptConfigFile";
+            this.btn_encryptConfigFile.UseVisualStyleBackColor = false;
+            this.btn_encryptConfigFile.Click += new System.EventHandler(this.Button5_Click);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // textBox3
+            // txt_ConfigFilePath
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
+            resources.ApplyResources(this.txt_ConfigFilePath, "txt_ConfigFilePath");
+            this.txt_ConfigFilePath.Name = "txt_ConfigFilePath";
+            this.txt_ConfigFilePath.ReadOnly = true;
             // 
-            // button4
+            // btn_ConfigFilePath
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            resources.ApplyResources(this.btn_ConfigFilePath, "btn_ConfigFilePath");
+            this.btn_ConfigFilePath.Name = "btn_ConfigFilePath";
+            this.btn_ConfigFilePath.UseVisualStyleBackColor = true;
+            this.btn_ConfigFilePath.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.label24);
-            this.tabPage4.Controls.Add(this.button16);
+            this.tabPage4.Controls.Add(this.btn_unlockSql);
             resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -563,13 +562,13 @@ namespace DBSec
             this.label24.ForeColor = System.Drawing.Color.Red;
             this.label24.Name = "label24";
             // 
-            // button16
+            // btn_unlockSql
             // 
-            this.button16.BackColor = System.Drawing.Color.Red;
-            resources.ApplyResources(this.button16, "button16");
-            this.button16.Name = "button16";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.btn_unlockSql.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.btn_unlockSql, "btn_unlockSql");
+            this.btn_unlockSql.Name = "btn_unlockSql";
+            this.btn_unlockSql.UseVisualStyleBackColor = false;
+            this.btn_unlockSql.Click += new System.EventHandler(this.button16_Click);
             // 
             // label8
             // 
@@ -608,21 +607,32 @@ namespace DBSec
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.txt_DbPass);
             this.panel1.Controls.Add(this.txt_DB);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.btn_testDb);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txt_ServerIP);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // txt_DbPass
+            // 
+            resources.ApplyResources(this.txt_DbPass, "txt_DbPass");
+            this.txt_DbPass.Name = "txt_DbPass";
+            // 
             // txt_DB
             // 
             this.txt_DB.FormattingEnabled = true;
             resources.ApplyResources(this.txt_DB, "txt_DB");
             this.txt_DB.Name = "txt_DB";
-            this.txt_DB.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.txt_DB.Enter += new System.EventHandler(this.comboBox1_Enter);
             // 
             // label10
@@ -632,25 +642,24 @@ namespace DBSec
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label10.Name = "label10";
             // 
-            // button8
+            // btn_testDb
             // 
-            this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            this.btn_testDb.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_testDb, "btn_testDb");
+            this.btn_testDb.Name = "btn_testDb";
+            this.btn_testDb.UseVisualStyleBackColor = false;
+            this.btn_testDb.Click += new System.EventHandler(this.Button8_Click);
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label11.Name = "label11";
-            this.label11.Click += new System.EventHandler(this.Label11_Click);
             // 
-            // label4
+            // lbl_CurrentSaPassword
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lbl_CurrentSaPassword, "lbl_CurrentSaPassword");
+            this.lbl_CurrentSaPassword.Name = "lbl_CurrentSaPassword";
             // 
             // textBox4
             // 
@@ -740,25 +749,24 @@ namespace DBSec
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button15
+            // btn_changeSa
             // 
-            this.button15.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.btn_changeSa.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.btn_changeSa, "btn_changeSa");
+            this.btn_changeSa.Name = "btn_changeSa";
+            this.btn_changeSa.UseVisualStyleBackColor = false;
+            this.btn_changeSa.Click += new System.EventHandler(this.button15_Click);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.button15);
+            this.panel3.Controls.Add(this.btn_changeSa);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.lbl_CurrentSaPassword);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label7
             // 
@@ -781,6 +789,7 @@ namespace DBSec
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolsToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
@@ -799,25 +808,16 @@ namespace DBSec
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // dsToolStripMenuItem
             // 
             this.dsToolStripMenuItem.Name = "dsToolStripMenuItem";
             resources.ApplyResources(this.dsToolStripMenuItem, "dsToolStripMenuItem");
-            this.dsToolStripMenuItem.Click += new System.EventHandler(this.DsToolStripMenuItem_Click);
-            // 
-            // Tn
-            // 
-            resources.ApplyResources(this.Tn, "Tn");
-            this.Tn.Name = "Tn";
-            this.Tn.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Tn.OcxState")));
             // 
             // Form1
             // 
@@ -854,7 +854,6 @@ namespace DBSec
             this.panel5.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Tn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -867,24 +866,24 @@ namespace DBSec
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_backupCertificate;
         private System.Windows.Forms.TabControl SecTab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txt_certificateBackupPath;
+        private System.Windows.Forms.Button btn_browseForCertificateBak;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_encryptConfigFile;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txt_ConfigFilePath;
+        private System.Windows.Forms.Button btn_ConfigFilePath;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_ServerIP;
@@ -894,35 +893,35 @@ namespace DBSec
         private System.Windows.Forms.TextBox TinyCode;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btn_encrypt;
+        private System.Windows.Forms.Button btn_testDb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_masterKeyRestorePath;
+        private System.Windows.Forms.Button btn_masterKeyRestorePath;
+        private System.Windows.Forms.Button btn_restore;
+        private System.Windows.Forms.Label lbl_CurrentSaPassword;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox txt_certificatePath;
+        private System.Windows.Forms.Button btn_BrowsePathForEncrypt;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.TextBox txt_dbRestorePath;
+        private System.Windows.Forms.Button btn_dbRestorePath;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox txt_certificateRestorePath;
+        private System.Windows.Forms.Button btn_certificateRestorePath;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.TextBox txt_privateKeyRestorePath;
+        private System.Windows.Forms.Button btn_privateKeyRestorePath;
+        private System.Windows.Forms.Button btn_changeSa;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_tinyAddress;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
@@ -931,7 +930,7 @@ namespace DBSec
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.ComboBox txt_DB;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btn_unlockSql;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
@@ -943,14 +942,14 @@ namespace DBSec
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private TextBox textBox13;
+        private TextBox txt_dbRestoreName;
         private Label label29;
         private ToolStripSeparator exitToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem1;
         private RadioButton radioButton4;
         private RadioButton radioButton3;
         private TextBox textBox14;
-        private CheckBox checkBox2;
+        private CheckBox chk_copyToHost;
         private Label label32;
         private TextBox textBox16;
         private Label label33;
@@ -958,11 +957,13 @@ namespace DBSec
         private Label label24;
         private TextBox textBox10;
         private Button button10;
-        private CheckBox checkBox3;
+        private CheckBox chk_copyDbToHost;
         private Label label25;
         private ToolStripMenuItem dsToolStripMenuItem;
         private CheckBox checkBox4;
-        private AxTiny Tn;
+        private Label label34;
+        private TextBox txt_DbPass;
+        private TabPage tabPage6;
     }
 }
 

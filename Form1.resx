@@ -118,342 +118,102 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_backupCertificate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 72</value>
+  <data name="btn_backupCertificate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 89</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_backupCertificate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 35</value>
+  <data name="btn_backupCertificate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 43</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_backupCertificate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="btn_backupCertificate.Text" xml:space="preserve">
     <value>Backup</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;btn_backupCertificate.Name" xml:space="preserve">
+    <value>btn_backupCertificate</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_backupCertificate.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_backupCertificate.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_backupCertificate.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="SecTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 199</value>
-  </data>
-  <data name="SecTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="SecTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>718, 293</value>
-  </data>
-  <data name="SecTab.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;SecTab.Name" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;SecTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SecTab.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;SecTab.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
-    <value>checkBox3</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label28.Name" xml:space="preserve">
-    <value>label28</value>
-  </data>
-  <data name="&gt;&gt;label28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
-  </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
-  </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button11.Name" xml:space="preserve">
-    <value>button11</value>
-  </data>
-  <data name="&gt;&gt;button11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
-  </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 267</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Encrypt Database</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>SecTab</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chk_copyDbToHost.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chk_copyDbToHost.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 81</value>
+  <data name="chk_copyDbToHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 100</value>
   </data>
-  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 17</value>
+  <data name="chk_copyDbToHost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="chk_copyDbToHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 20</value>
+  </data>
+  <data name="chk_copyDbToHost.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="checkBox3.Text" xml:space="preserve">
-    <value>کپی دیتابیس در هاست</value>
+  <data name="chk_copyDbToHost.Text" xml:space="preserve">
+    <value>Copy Db into host</value>
   </data>
-  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
-    <value>checkBox3</value>
+  <data name="&gt;&gt;chk_copyDbToHost.Name" xml:space="preserve">
+    <value>chk_copyDbToHost</value>
   </data>
-  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;chk_copyDbToHost.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chk_copyDbToHost.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;chk_copyDbToHost.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chk_copyToHost.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chk_copyToHost.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 62</value>
+  <data name="chk_copyToHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 76</value>
   </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 17</value>
+  <data name="chk_copyToHost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="chk_copyToHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 20</value>
+  </data>
+  <data name="chk_copyToHost.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="checkBox2.Text" xml:space="preserve">
-    <value>کپی در هاست</value>
+  <data name="chk_copyToHost.Text" xml:space="preserve">
+    <value>Copy to host</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="&gt;&gt;chk_copyToHost.Name" xml:space="preserve">
+    <value>chk_copyToHost</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;chk_copyToHost.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chk_copyToHost.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;chk_copyToHost.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
@@ -463,13 +223,10 @@
     <value>NoControl</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 103</value>
-  </data>
-  <data name="label32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>387, 127</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+    <value>51, 16</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -493,10 +250,13 @@
     <value>True</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 196</value>
+    <value>16, 241</value>
+  </data>
+  <data name="label28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+    <value>51, 16</value>
   </data>
   <data name="label28.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -520,10 +280,13 @@
     <value>True</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 168</value>
+    <value>17, 207</value>
+  </data>
+  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+    <value>51, 16</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -547,10 +310,13 @@
     <value>True</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 134</value>
+    <value>16, 165</value>
+  </data>
+  <data name="label26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+    <value>51, 16</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -574,22 +340,19 @@
     <value>True</value>
   </data>
   <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Jalal, 12pt</value>
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 9</value>
-  </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 19</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 24</value>
+    <value>140, 25</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>یک مسیر را برای کپی انتخاب نمایید</value>
+    <value>Choose a path</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -603,58 +366,58 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 37</value>
+  <data name="txt_certificatePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 46</value>
   </data>
-  <data name="textBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txt_certificatePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>444, 20</value>
+  <data name="txt_certificatePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>591, 22</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_certificatePath.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="textBox5.Text" xml:space="preserve">
+  <data name="txt_certificatePath.Text" xml:space="preserve">
     <value>D:\secureDBPrj</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;txt_certificatePath.Name" xml:space="preserve">
+    <value>txt_certificatePath</value>
   </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificatePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificatePath.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificatePath.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 35</value>
+  <data name="btn_BrowsePathForEncrypt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 43</value>
   </data>
-  <data name="button11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_BrowsePathForEncrypt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
+  <data name="btn_BrowsePathForEncrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 27</value>
   </data>
-  <data name="button11.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_BrowsePathForEncrypt.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="button11.Text" xml:space="preserve">
+  <data name="btn_BrowsePathForEncrypt.Text" xml:space="preserve">
     <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button11.Name" xml:space="preserve">
-    <value>button11</value>
+  <data name="&gt;&gt;btn_BrowsePathForEncrypt.Name" xml:space="preserve">
+    <value>btn_BrowsePathForEncrypt</value>
   </data>
-  <data name="&gt;&gt;button11.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_BrowsePathForEncrypt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_BrowsePathForEncrypt.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_BrowsePathForEncrypt.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
@@ -664,13 +427,10 @@
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 82</value>
-  </data>
-  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>175, 101</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>58, 16</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -690,200 +450,92 @@
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_encrypt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 70</value>
+  <data name="btn_encrypt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 86</value>
   </data>
-  <data name="button7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_encrypt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 36</value>
+  <data name="btn_encrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 44</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_encrypt.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
+  <data name="btn_encrypt.Text" xml:space="preserve">
     <value>Encrypt</value>
   </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
+  <data name="&gt;&gt;btn_encrypt.Name" xml:space="preserve">
+    <value>btn_encrypt</value>
   </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_encrypt.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_encrypt.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_encrypt.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>949, 332</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Encrypt Database</value>
   </data>
-  <data name="tabPage2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 267</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Backup Certificate</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
     <value>SecTab</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
-    <value>checkBox4</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="tabPage6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>949, 332</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+  <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>Masking</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+    <value>SecTab</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>609, 342</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -892,16 +544,19 @@
     <value>NoControl</value>
   </data>
   <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 86</value>
+    <value>589, 106</value>
+  </data>
+  <data name="checkBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 17</value>
+    <value>134, 20</value>
   </data>
   <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
   <data name="checkBox4.Text" xml:space="preserve">
-    <value>کپی دیتابیس در هاست</value>
+    <value>Copy Db into host</value>
   </data>
   <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
     <value>checkBox4</value>
@@ -919,16 +574,19 @@
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 68</value>
+    <value>589, 84</value>
+  </data>
+  <data name="checkBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 17</value>
+    <value>113, 20</value>
   </data>
   <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
-    <value>کپی در هاست</value>
+    <value>Copy into host</value>
   </data>
   <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
     <value>checkBox1</value>
@@ -946,10 +604,13 @@
     <value>True</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 154</value>
+    <value>277, 190</value>
+  </data>
+  <data name="label30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+    <value>51, 16</value>
   </data>
   <data name="label30.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -973,13 +634,10 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 86</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>176, 106</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>44, 16</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1003,13 +661,10 @@
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 105</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>445, 129</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>44, 16</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1033,22 +688,19 @@
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Jalal, 12pt</value>
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 15</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>3, 23</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 24</value>
+    <value>140, 25</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>یک مسیر را برای کپی انتخاب نمایید</value>
+    <value>Choose a path</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -1062,299 +714,155 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 41</value>
+  <data name="txt_certificateBackupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 50</value>
   </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txt_certificateBackupPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 20</value>
+  <data name="txt_certificateBackupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>577, 22</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_certificateBackupPath.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
+  <data name="txt_certificateBackupPath.Text" xml:space="preserve">
     <value>D:\secureDBPrj</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;txt_certificateBackupPath.Name" xml:space="preserve">
+    <value>txt_certificateBackupPath</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificateBackupPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificateBackupPath.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificateBackupPath.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 41</value>
+  <data name="btn_browseForCertificateBak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>589, 50</value>
   </data>
-  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_browseForCertificateBak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
+  <data name="btn_browseForCertificateBak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 27</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_browseForCertificateBak.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="btn_browseForCertificateBak.Text" xml:space="preserve">
     <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;btn_browseForCertificateBak.Name" xml:space="preserve">
+    <value>btn_browseForCertificateBak</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_browseForCertificateBak.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_browseForCertificateBak.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_browseForCertificateBak.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;textBox13.Name" xml:space="preserve">
-    <value>textBox13</value>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;textBox13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;textBox13.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;textBox13.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>812, 421</value>
   </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
-  </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;label31.Name" xml:space="preserve">
-    <value>label31</value>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;label31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>949, 332</value>
   </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Backup Certificate</value>
   </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
-    <value>textBox8</value>
-  </data>
-  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button14.Name" xml:space="preserve">
-    <value>button14</value>
-  </data>
-  <data name="&gt;&gt;button14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button12.Name" xml:space="preserve">
-    <value>button12</value>
-  </data>
-  <data name="&gt;&gt;button12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 267</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>RestoreCertificate</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
     <value>SecTab</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 228</value>
+  <data name="txt_dbRestoreName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 281</value>
   </data>
-  <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+  <data name="txt_dbRestoreName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="textBox13.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_dbRestoreName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="txt_dbRestoreName.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="textBox13.Text" xml:space="preserve">
+  <data name="txt_dbRestoreName.Text" xml:space="preserve">
     <value>Sinad</value>
   </data>
-  <data name="&gt;&gt;textBox13.Name" xml:space="preserve">
-    <value>textBox13</value>
+  <data name="&gt;&gt;txt_dbRestoreName.Name" xml:space="preserve">
+    <value>txt_dbRestoreName</value>
   </data>
-  <data name="&gt;&gt;textBox13.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_dbRestoreName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_dbRestoreName.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;textBox13.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_dbRestoreName.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 231</value>
+    <value>43, 284</value>
+  </data>
+  <data name="label29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+    <value>65, 16</value>
   </data>
   <data name="label29.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1378,10 +886,13 @@
     <value>True</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 269</value>
+    <value>317, 331</value>
+  </data>
+  <data name="label31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
+    <value>51, 16</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1401,83 +912,17 @@
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
-    <value>radioButton1</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button13.Name" xml:space="preserve">
-    <value>button13</value>
-  </data>
-  <data name="&gt;&gt;button13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
-    <value>textBox7</value>
-  </data>
-  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 160</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 56</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 7</value>
+    <value>25, 9</value>
+  </data>
+  <data name="radioButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
+    <value>54, 20</value>
   </data>
   <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1501,10 +946,13 @@
     <value>True</value>
   </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 30</value>
+    <value>25, 37</value>
+  </data>
+  <data name="radioButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 17</value>
+    <value>53, 20</value>
   </data>
   <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1524,71 +972,92 @@
   <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>617, 13</value>
+  <data name="btn_dbRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>823, 16</value>
   </data>
-  <data name="button13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_dbRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 26</value>
+  <data name="btn_dbRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 32</value>
   </data>
-  <data name="button13.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_dbRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="button13.Text" xml:space="preserve">
+  <data name="btn_dbRestorePath.Text" xml:space="preserve">
     <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button13.Name" xml:space="preserve">
-    <value>button13</value>
+  <data name="&gt;&gt;btn_dbRestorePath.Name" xml:space="preserve">
+    <value>btn_dbRestorePath</value>
   </data>
-  <data name="&gt;&gt;button13.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_dbRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_dbRestorePath.Parent" xml:space="preserve">
     <value>panel4</value>
   </data>
-  <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_dbRestorePath.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 17</value>
+  <data name="txt_dbRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 21</value>
   </data>
-  <data name="textBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txt_dbRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>544, 20</value>
+  <data name="txt_dbRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>724, 22</value>
   </data>
-  <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_dbRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="textBox7.Text" xml:space="preserve">
+  <data name="txt_dbRestorePath.Text" xml:space="preserve">
     <value>\\192.168.0.20\Sharing Company\Personnel\Dehghani\Cert\SinadSecure.bak</value>
   </data>
-  <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
-    <value>textBox7</value>
+  <data name="&gt;&gt;txt_dbRestorePath.Name" xml:space="preserve">
+    <value>txt_dbRestorePath</value>
   </data>
-  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_dbRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_dbRestorePath.Parent" xml:space="preserve">
     <value>panel4</value>
   </data>
-  <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_dbRestorePath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 197</value>
+  </data>
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>923, 69</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 68</value>
-  </data>
-  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>39, 84</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
+    <value>75, 16</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1608,71 +1077,68 @@
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 84</value>
+  <data name="txt_privateKeyRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 103</value>
   </data>
-  <data name="textBox8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txt_privateKeyRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>591, 20</value>
+  <data name="txt_privateKeyRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>787, 22</value>
   </data>
-  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_privateKeyRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="textBox8.Text" xml:space="preserve">
+  <data name="txt_privateKeyRestorePath.Text" xml:space="preserve">
     <value>\\192.168.0.20\Sharing Company\Personnel\Dehghani\Cert\MyServerCert.pvk</value>
   </data>
-  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
-    <value>textBox8</value>
+  <data name="&gt;&gt;txt_privateKeyRestorePath.Name" xml:space="preserve">
+    <value>txt_privateKeyRestorePath</value>
   </data>
-  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_privateKeyRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_privateKeyRestorePath.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_privateKeyRestorePath.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 80</value>
+  <data name="btn_privateKeyRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>835, 98</value>
   </data>
-  <data name="button14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_privateKeyRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 26</value>
+  <data name="btn_privateKeyRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 32</value>
   </data>
-  <data name="button14.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_privateKeyRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="button14.Text" xml:space="preserve">
+  <data name="btn_privateKeyRestorePath.Text" xml:space="preserve">
     <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button14.Name" xml:space="preserve">
-    <value>button14</value>
+  <data name="&gt;&gt;btn_privateKeyRestorePath.Name" xml:space="preserve">
+    <value>btn_privateKeyRestorePath</value>
   </data>
-  <data name="&gt;&gt;button14.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_privateKeyRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_privateKeyRestorePath.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_privateKeyRestorePath.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 144</value>
-  </data>
-  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>41, 177</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
+    <value>67, 16</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1696,13 +1162,10 @@
     <value>True</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 108</value>
-  </data>
-  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>39, 133</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
+    <value>66, 16</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1722,71 +1185,68 @@
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 124</value>
+  <data name="txt_certificateRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 153</value>
   </data>
-  <data name="textBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txt_certificateRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>591, 20</value>
+  <data name="txt_certificateRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>787, 22</value>
   </data>
-  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_certificateRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="textBox6.Text" xml:space="preserve">
+  <data name="txt_certificateRestorePath.Text" xml:space="preserve">
     <value>\\192.168.0.20\Sharing Company\Personnel\Dehghani\Cert\MyServerCert.cer</value>
   </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
+  <data name="&gt;&gt;txt_certificateRestorePath.Name" xml:space="preserve">
+    <value>txt_certificateRestorePath</value>
   </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificateRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificateRestorePath.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_certificateRestorePath.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 120</value>
+  <data name="btn_certificateRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>835, 148</value>
   </data>
-  <data name="button12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_certificateRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 26</value>
+  <data name="btn_certificateRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 32</value>
   </data>
-  <data name="button12.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_certificateRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="button12.Text" xml:space="preserve">
+  <data name="btn_certificateRestorePath.Text" xml:space="preserve">
     <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button12.Name" xml:space="preserve">
-    <value>button12</value>
+  <data name="&gt;&gt;btn_certificateRestorePath.Name" xml:space="preserve">
+    <value>btn_certificateRestorePath</value>
   </data>
-  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_certificateRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_certificateRestorePath.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_certificateRestorePath.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 33</value>
-  </data>
-  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>39, 41</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+    <value>74, 16</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1806,247 +1266,118 @@
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_restore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 221</value>
+  <data name="btn_restore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 272</value>
   </data>
-  <data name="button9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_restore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 32</value>
+  <data name="btn_restore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 39</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_restore.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button9.Text" xml:space="preserve">
+  <data name="btn_restore.Text" xml:space="preserve">
     <value>Restore</value>
   </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
+  <data name="&gt;&gt;btn_restore.Name" xml:space="preserve">
+    <value>btn_restore</value>
   </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_restore.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_restore.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_restore.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 48</value>
+  <data name="txt_masterKeyRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 59</value>
   </data>
-  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="txt_masterKeyRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>591, 20</value>
+  <data name="txt_masterKeyRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>787, 22</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_masterKeyRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="textBox2.Text" xml:space="preserve">
+  <data name="txt_masterKeyRestorePath.Text" xml:space="preserve">
     <value>\\192.168.0.20\Sharing Company\Personnel\Dehghani\Cert\MasterKey.key</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="&gt;&gt;txt_masterKeyRestorePath.Name" xml:space="preserve">
+    <value>txt_masterKeyRestorePath</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_masterKeyRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_masterKeyRestorePath.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_masterKeyRestorePath.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 42</value>
+  <data name="btn_masterKeyRestorePath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_masterKeyRestorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>835, 52</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 26</value>
+  <data name="btn_masterKeyRestorePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_masterKeyRestorePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 32</value>
+  </data>
+  <data name="btn_masterKeyRestorePath.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="btn_masterKeyRestorePath.Text" xml:space="preserve">
     <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;btn_masterKeyRestorePath.Name" xml:space="preserve">
+    <value>btn_masterKeyRestorePath</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_masterKeyRestorePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_masterKeyRestorePath.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_masterKeyRestorePath.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;Tn.Name" xml:space="preserve">
-    <value>Tn</value>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="&gt;&gt;Tn.Type" xml:space="preserve">
-    <value>AxTINYLib.AxTiny, AxInterop.TINYLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="tabPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;Tn.Parent" xml:space="preserve">
-    <value>tabPage5</value>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>949, 332</value>
   </data>
-  <data name="&gt;&gt;Tn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
-  </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label19.Name" xml:space="preserve">
-    <value>label19</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>RestoreCertificate</value>
   </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBox9.Name" xml:space="preserve">
-    <value>textBox9</value>
-  </data>
-  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
-  </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 267</value>
-  </data>
-  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tabPage5.Text" xml:space="preserve">
-    <value>EncryptConfig</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
     <value>SecTab</value>
   </data>
-  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
@@ -2056,13 +1387,10 @@
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 221</value>
-  </data>
-  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>499, 272</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>58, 16</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -2080,7 +1408,7 @@
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2089,13 +1417,10 @@
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 167</value>
-  </data>
-  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>499, 206</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>58, 16</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -2113,7 +1438,7 @@
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2122,13 +1447,10 @@
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 112</value>
-  </data>
-  <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>180, 138</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>58, 16</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -2146,25 +1468,22 @@
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 71</value>
-  </data>
-  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>180, 87</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 13</value>
+    <value>64, 16</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
   <data name="label18.Text" xml:space="preserve">
-    <value>آدرس سرور تاینی را وارد نمایید</value>
+    <value>Enter tiny </value>
   </data>
   <data name="&gt;&gt;label18.Name" xml:space="preserve">
     <value>label18</value>
@@ -2176,40 +1495,40 @@
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
-  <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 68</value>
+  <data name="txt_tinyAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 84</value>
   </data>
-  <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+  <data name="txt_tinyAddress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="textBox9.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_tinyAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="txt_tinyAddress.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;textBox9.Name" xml:space="preserve">
-    <value>textBox9</value>
+  <data name="&gt;&gt;txt_tinyAddress.Name" xml:space="preserve">
+    <value>txt_tinyAddress</value>
   </data>
-  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_tinyAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_tinyAddress.Parent" xml:space="preserve">
     <value>tabPage5</value>
   </data>
-  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;txt_tinyAddress.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 256</value>
-  </data>
-  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>523, 315</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 16</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2224,55 +1543,52 @@
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
-  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_encryptConfigFile.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 104</value>
+  <data name="btn_encryptConfigFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 128</value>
   </data>
-  <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_encryptConfigFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 29</value>
+  <data name="btn_encryptConfigFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 36</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_encryptConfigFile.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
+  <data name="btn_encryptConfigFile.Text" xml:space="preserve">
     <value>Encrypt</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;btn_encryptConfigFile.Name" xml:space="preserve">
+    <value>btn_encryptConfigFile</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_encryptConfigFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_encryptConfigFile.Parent" xml:space="preserve">
     <value>tabPage5</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;btn_encryptConfigFile.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 39</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>36, 26</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 13</value>
+    <value>136, 16</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>فایل کانفیگ را انتخاب نمایید</value>
+    <value>Choose the Config file</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -2284,111 +1600,87 @@
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 36</value>
-  </data>
-  <data name="textBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 20</value>
-  </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="textBox3.Text" xml:space="preserve">
-    <value>C:\Users\Administrator\Desktop\App.config</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 32</value>
-  </data>
-  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 26</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>Browse</value>
+  <data name="txt_ConfigFilePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 44</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="txt_ConfigFilePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txt_ConfigFilePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 22</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="txt_ConfigFilePath.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txt_ConfigFilePath.Text" xml:space="preserve">
+    <value>C:\Users\Administrator\Desktop\App.config</value>
+  </data>
+  <data name="&gt;&gt;txt_ConfigFilePath.Name" xml:space="preserve">
+    <value>txt_ConfigFilePath</value>
+  </data>
+  <data name="&gt;&gt;txt_ConfigFilePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_ConfigFilePath.Parent" xml:space="preserve">
     <value>tabPage5</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;txt_ConfigFilePath.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
+  <data name="btn_ConfigFilePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 39</value>
   </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btn_ConfigFilePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="btn_ConfigFilePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 32</value>
   </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btn_ConfigFilePath.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;button16.Name" xml:space="preserve">
-    <value>button16</value>
+  <data name="btn_ConfigFilePath.Text" xml:space="preserve">
+    <value>Browse</value>
   </data>
-  <data name="&gt;&gt;button16.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_ConfigFilePath.Name" xml:space="preserve">
+    <value>btn_ConfigFilePath</value>
+  </data>
+  <data name="&gt;&gt;btn_ConfigFilePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button16.Parent" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="&gt;&gt;btn_ConfigFilePath.Parent" xml:space="preserve">
+    <value>tabPage5</value>
   </data>
-  <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btn_ConfigFilePath.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="tabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="tabPage5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>710, 267</value>
+  <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>949, 332</value>
   </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Manage SQL</value>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>EncryptConfig</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
+    <value>tabPage5</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
     <value>SecTab</value>
   </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
@@ -2398,10 +1690,13 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 54</value>
+    <value>16, 66</value>
+  </data>
+  <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>61, 17</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -2421,44 +1716,98 @@
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button16.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_unlockSql.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
-  <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 79</value>
+  <data name="btn_unlockSql.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 97</value>
   </data>
-  <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 37</value>
+  <data name="btn_unlockSql.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="button16.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_unlockSql.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 46</value>
+  </data>
+  <data name="btn_unlockSql.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="button16.Text" xml:space="preserve">
+  <data name="btn_unlockSql.Text" xml:space="preserve">
     <value>Unlock SQL</value>
   </data>
-  <data name="&gt;&gt;button16.Name" xml:space="preserve">
-    <value>button16</value>
+  <data name="&gt;&gt;btn_unlockSql.Name" xml:space="preserve">
+    <value>btn_unlockSql</value>
   </data>
-  <data name="&gt;&gt;button16.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_unlockSql.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button16.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_unlockSql.Parent" xml:space="preserve">
     <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_unlockSql.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>949, 332</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Manage SQL</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>SecTab</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SecTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 245</value>
+  </data>
+  <data name="SecTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="SecTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 361</value>
+  </data>
+  <data name="SecTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SecTab.Name" xml:space="preserve">
+    <value>SecTab</value>
+  </data>
+  <data name="&gt;&gt;SecTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SecTab.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;SecTab.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 21</value>
-  </data>
-  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>20, 13</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
+    <value>93, 17</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2476,19 +1825,16 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 53</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>83, 69</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 13</value>
+    <value>27, 17</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2506,22 +1852,22 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txt_ServerIP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 18</value>
+    <value>119, 11</value>
   </data>
   <data name="txt_ServerIP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="txt_ServerIP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
+    <value>160, 23</value>
   </data>
   <data name="txt_ServerIP.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="txt_ServerIP.Text" xml:space="preserve">
-    <value>192.168.0.10</value>
+    <value>127.0.0.1</value>
   </data>
   <data name="&gt;&gt;txt_ServerIP.Name" xml:space="preserve">
     <value>txt_ServerIP</value>
@@ -2533,7 +1879,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txt_ServerIP.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -2548,13 +1894,13 @@
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 16</value>
+    <value>788, 20</value>
   </data>
   <data name="button6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 39</value>
+    <value>157, 48</value>
   </data>
   <data name="button6.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2575,16 +1921,16 @@
     <value>10</value>
   </data>
   <data name="TinyCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 2</value>
+    <value>139, 2</value>
   </data>
   <data name="TinyCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="TinyCode.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="TinyCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 20</value>
+    <value>293, 22</value>
   </data>
   <data name="TinyCode.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2601,74 +1947,74 @@
   <data name="&gt;&gt;TinyCode.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;txt_DB.Name" xml:space="preserve">
-    <value>txt_DB</value>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;txt_DB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;txt_DB.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 40</value>
   </data>
-  <data name="&gt;&gt;txt_DB.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 17</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+  <data name="label34.Text" xml:space="preserve">
+    <value>Db Pass</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_DbPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 38</value>
+  </data>
+  <data name="txt_DbPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_DbPass.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="txt_DbPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 23</value>
+  </data>
+  <data name="txt_DbPass.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="txt_DbPass.Text" xml:space="preserve">
+    <value>123</value>
+  </data>
+  <data name="&gt;&gt;txt_DbPass.Name" xml:space="preserve">
+    <value>txt_DbPass</value>
+  </data>
+  <data name="&gt;&gt;txt_DbPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_DbPass.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txt_DbPass.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
-  </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 112</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 82</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="txt_DB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 50</value>
+    <value>119, 65</value>
+  </data>
+  <data name="txt_DB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txt_DB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 21</value>
+    <value>159, 25</value>
   </data>
   <data name="txt_DB.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2683,7 +2029,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txt_DB.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2692,13 +2038,10 @@
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 56</value>
-  </data>
-  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>381, 69</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>58, 16</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -2716,37 +2059,64 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
-  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_testDb.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 49</value>
+  <data name="btn_testDb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 11</value>
   </data>
-  <data name="button8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_testDb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 24</value>
+  <data name="btn_testDb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 50</value>
   </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_testDb.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="button8.Text" xml:space="preserve">
+  <data name="btn_testDb.Text" xml:space="preserve">
     <value>Test db</value>
   </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
+  <data name="&gt;&gt;btn_testDb.Name" xml:space="preserve">
+    <value>btn_testDb</value>
   </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_testDb.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_testDb.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;btn_testDb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 138</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>473, 100</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2755,13 +2125,10 @@
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 55</value>
-  </data>
-  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>400, 68</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 13</value>
+    <value>58, 16</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2781,47 +2148,44 @@
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbl_CurrentSaPassword.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 54</value>
+  <data name="lbl_CurrentSaPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 62</value>
   </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="lbl_CurrentSaPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 16</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbl_CurrentSaPassword.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lbl_CurrentSaPassword.Text" xml:space="preserve">
     <value>Current Password</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lbl_CurrentSaPassword.Name" xml:space="preserve">
+    <value>lbl_CurrentSaPassword</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_CurrentSaPassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_CurrentSaPassword.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_CurrentSaPassword.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 48</value>
+    <value>128, 59</value>
   </data>
   <data name="textBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="textBox4.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 20</value>
+    <value>163, 22</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2848,10 +2212,13 @@
     <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 4</value>
+    <value>456, 5</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 16</value>
+    <value>73, 21</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -2872,10 +2239,13 @@
     <value>0</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 74</value>
+    <value>788, 91</value>
+  </data>
+  <data name="button10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 20</value>
+    <value>151, 25</value>
   </data>
   <data name="button10.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -2896,10 +2266,13 @@
     <value>1</value>
   </data>
   <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 74</value>
+    <value>357, 91</value>
+  </data>
+  <data name="textBox10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 20</value>
+    <value>383, 22</value>
   </data>
   <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -2926,13 +2299,10 @@
     <value>NoControl</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 77</value>
-  </data>
-  <data name="label33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>44, 95</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
+    <value>72, 16</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -2959,13 +2329,10 @@
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 51</value>
-  </data>
-  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>44, 63</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
+    <value>36, 16</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2986,10 +2353,13 @@
     <value>4</value>
   </data>
   <data name="textBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 74</value>
+    <value>139, 91</value>
+  </data>
+  <data name="textBox16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 20</value>
+    <value>209, 22</value>
   </data>
   <data name="textBox16.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -3013,10 +2383,13 @@
     <value>NoControl</value>
   </data>
   <data name="radioButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 27</value>
+    <value>4, 33</value>
+  </data>
+  <data name="radioButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="radioButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 17</value>
+    <value>116, 20</value>
   </data>
   <data name="radioButton4.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -3040,10 +2413,13 @@
     <value>True</value>
   </data>
   <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 4</value>
+  </data>
+  <data name="radioButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="radioButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 17</value>
+    <value>91, 20</value>
   </data>
   <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -3064,10 +2440,13 @@
     <value>7</value>
   </data>
   <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 48</value>
+    <value>139, 59</value>
+  </data>
+  <data name="textBox14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 20</value>
+    <value>293, 22</value>
   </data>
   <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -3088,13 +2467,16 @@
     <value>True</value>
   </data>
   <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Zar, 8.25pt</value>
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 29</value>
+    <value>475, 36</value>
+  </data>
+  <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 18</value>
+    <value>54, 17</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -3115,13 +2497,13 @@
     <value>9</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 2</value>
+    <value>12, 2</value>
   </data>
   <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>718, 106</value>
+    <value>957, 130</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -3141,77 +2523,50 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>383, 17</value>
   </metadata>
-  <data name="button15.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_changeSa.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
-  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 48</value>
+  <data name="btn_changeSa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 59</value>
   </data>
-  <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 22</value>
+  <data name="btn_changeSa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="button15.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_changeSa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 27</value>
+  </data>
+  <data name="btn_changeSa.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="button15.Text" xml:space="preserve">
+  <data name="btn_changeSa.Text" xml:space="preserve">
     <value>Change sa password and name </value>
   </data>
-  <data name="&gt;&gt;button15.Name" xml:space="preserve">
-    <value>button15</value>
+  <data name="&gt;&gt;btn_changeSa.Name" xml:space="preserve">
+    <value>btn_changeSa</value>
   </data>
-  <data name="&gt;&gt;button15.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_changeSa.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_changeSa.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 113</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 81</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_changeSa.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>B Zar, 8.25pt</value>
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 17</value>
+    <value>124, 21</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 18</value>
+    <value>46, 17</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -3231,6 +2586,30 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>493, 139</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 99</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>523, 17</value>
   </metadata>
@@ -3241,16 +2620,19 @@
     <value>49</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>731, 520</value>
+    <value>975, 640</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 27</value>
+    <value>1, 33</value>
+  </data>
+  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 515</value>
+    <value>973, 634</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -3270,11 +2652,29 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>653, 17</value>
   </metadata>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 6</value>
+  </data>
+  <data name="exitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="dsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="dsToolStripMenuItem.Text" xml:space="preserve">
+    <value>ds</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 24</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>731, 24</value>
+    <value>975, 28</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -3582,7 +2982,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>DBsec</value>
@@ -3640,55 +3040,5 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 6</value>
-  </data>
-  <data name="exitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
-  <data name="dsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
-  <data name="dsToolStripMenuItem.Text" xml:space="preserve">
-    <value>ds</value>
-  </data>
-  <data name="Tn.Enabled" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Tn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 230</value>
-  </data>
-  <data name="Tn.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAJQAAAAIB
-        AAAAAQAAAAAAAAAAAAAAABAAAAAAAAEAVgoAACsFAAAAAAAACw==
-</value>
-  </data>
-  <data name="Tn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
-  </data>
-  <data name="Tn.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;Tn.Name" xml:space="preserve">
-    <value>Tn</value>
-  </data>
-  <data name="&gt;&gt;Tn.Type" xml:space="preserve">
-    <value>AxTINYLib.AxTiny, AxInterop.TINYLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Tn.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;Tn.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
 </root>

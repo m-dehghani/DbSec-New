@@ -32,42 +32,41 @@ namespace DBSec
         private async void Button1_Click(object sender, EventArgs e)
         {
             label30.Text = "";
-            button1.Enabled = false;
+            btn_backupCertificate.Enabled = false;
             label2.Text = "please wait...";
-            label30.Text += await BackupCertificate(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass),
-                textBox1.Text, Utility.ToInsecureString(Utility.PharmacySerial));
+            label30.Text += await BackupCertificate(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass,
+                txt_certificateBackupPath.Text);
 
 
 
-            label30.Text += await BackupDataBase(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass),
-                textBox1.Text, Utility.ToInsecureString(Utility.PharmacySerial));
-            if (checkBox1.Checked == true )
-            {
-                label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
-                    Utility.ToInsecureString(Utility.PharmacySerial) + ".pvk", pharmacySerial:
-                    Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
+            label30.Text += await BackupDataBase(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass,
+                txt_certificateBackupPath.Text);
+            //if (checkBox1.Checked == true )
+            //{
+            //    label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
+            //        Utility.DbName + ".pvk", pharmacySerial:
+            //        Utility.DbName) + "\n";
 
-                label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
-                    Utility.ToInsecureString(Utility.PharmacySerial) + ".cer", pharmacySerial:
-                    Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
+            //    label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
+            //        Utility.DbName + ".cer", pharmacySerial:
+            //        Utility.DbName) + "\n";
 
-                label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
-                    Utility.ToInsecureString(Utility.PharmacySerial) + ".key",  pharmacySerial:
-                    Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
-                if (checkBox4.Checked)
-                {
-                    label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
-                                                                              Utility.ToInsecureString(Utility.PharmacySerial) + ".bak",  pharmacySerial:
-                                        Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
-                }
-            }
+            //    label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
+            //        Utility.DbName + ".key",  pharmacySerial:
+            //        Utility.DbName) + "\n";
+            //    if (checkBox4.Checked)
+            //    {
+            //        label30.Text += await Utility.PutFileInFTP(localFilePath: textBox1.Text + "\\" +
+            //                                                                  Utility.DbName + ".bak",  pharmacySerial:
+            //                            Utility.DbName) + "\n";
+            //    }
+            //}
 
             label2.Text = "";
-            button1.Enabled = true;
+            btn_backupCertificate.Enabled = true;
         }
-        private async Task<string> BackupDataBase(string IP, string DB, string pass, string pathToBackup, string pharmacyName)
+        private async Task<string> BackupDataBase(string IP, string DB, SecureString pass, string pathToBackup)
         {
-            var comomand = "";
             var constr = Utility.MakeConnectionStr(IP, DB, pass);
             var res = await Utility.TestDbConnection(constr);
             if (res != "Ok")
@@ -81,20 +80,22 @@ namespace DBSec
                 try
                 {
                     await conn.OpenAsync();
-                    var comm = string.Format(@" use master; OPEN MASTER KEY DECRYPTION BY PASSWORD = '{0}';BACKUP DATABASE {2} TO DISK=N'{1}\{3}.bak';", pass, pathToBackup, DB, pharmacyName + DateTime.Now.ToShortDateString().Replace('/', '-'));
+                    var comm = string.Format(@" use master; OPEN MASTER KEY DECRYPTION BY PASSWORD = '{0}';BACKUP DATABASE {2} TO DISK=N'{1}\{3}.bak';", pass, pathToBackup, DB,  DateTime.Now.ToShortDateString().Replace('/', '-'));
                     SqlCommand command = new SqlCommand(comm, conn);
                     command.ExecuteNonQuery();
                     return "Backup با موفقیت کپی شد";
-                    conn.Close();
+                    
                 }
                 catch (Exception ex)
                 {
 
                     return ex.Message;
                 }
+                finally
+                { conn.Close(); }
             }
         }
-        private async Task<string> BackupCertificate(string IP, string DB, string pass, string pathToBackup, string pharmacyName)
+        private async Task<string> BackupCertificate(string IP, string DB, SecureString pass, string pathToBackup)
         {
             var constr = Utility.MakeConnectionStr(IP, DB, pass);
             var res = await Utility.TestDbConnection(constr);
@@ -111,19 +112,19 @@ namespace DBSec
                 {
                     string returnMessage = "";
                     await conn.OpenAsync();
-                    var comm = string.Format(@"use master;
-                                                    OPEN MASTER KEY DECRYPTION BY PASSWORD = '{2}';                                                    
-                                                    BACKUP CERTIFICATE MyServerCert TO FILE = N'{0}\{1}.cer'
+                    var comm = string.Format($@"use master;
+                                                    OPEN MASTER KEY DECRYPTION BY PASSWORD = N'{Utility.ToInsecureString(pass)}';                                                    
+                                                    BACKUP CERTIFICATE {DB} TO FILE = N'{pathToBackup}\{DB}.cer'
                                                     WITH PRIVATE KEY
-                                                    (FILE = N'{0}\{1}.pvk',ENCRYPTION BY PASSWORD = N'AReallyStr0ngK#y4You')",
-                                                     pathToBackup, pharmacyName, pass);
+                                                    (FILE = N'{pathToBackup}\{DB}.pvk',ENCRYPTION BY PASSWORD = N'{Utility.passPhrase}')"
+                                                     );
                     SqlCommand command = new SqlCommand(comm, conn);
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                     returnMessage += "certificate با موفقیت کپی شد\n";
-                    comm = string.Format(@"BACKUP MASTER KEY TO FILE = N'{0}\{2}.key'  ENCRYPTION BY PASSWORD = '{1}';",
-                        pathToBackup, pass, pharmacyName);
+                    comm = string.Format($@"BACKUP MASTER KEY TO FILE = N'{0}\{Utility.DbName}.key'  ENCRYPTION BY PASSWORD = '{1}';",
+                        pathToBackup, Utility.ToInsecureString(pass));
                     command = new SqlCommand(comm, conn);
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                     conn.Close();
 
 
@@ -139,26 +140,40 @@ namespace DBSec
             }
         }
 
-        private async Task<string> EncryptDB(string IP, string DB, string pass)
+        private async Task<string> EncryptDB(string IP, string DB, SecureString pass)
         {
             try
             {
                 SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(IP, DB, pass));
+
                 SqlCommand command;
-                command = new SqlCommand(string.Format(@"USE master;
-                                                      CREATE MASTER KEY ENCRYPTION BY PASSWORD ='{0}';
-                                                      CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My DEK Certificate';
-                                                      USE {1};
+                try
+                {
+                    command = new SqlCommand($@"USE master;
+                                                      CREATE MASTER KEY ENCRYPTION BY PASSWORD = '{Utility.ToInsecureString(pass)}'", conn);
+                    await conn.OpenAsync();
+                    await command.ExecuteNonQueryAsync();
+
+                }
+                catch { }
+                finally { conn.Close(); }
+
+
+                command = new SqlCommand(string.Format($@"
+                                                      USE master;
+                                                      
+                                                      CREATE CERTIFICATE {Utility.DbName} WITH SUBJECT = 'My DEK Certificate';
+                                                      USE {DB};
                                                       CREATE DATABASE ENCRYPTION KEY
                                                       WITH ALGORITHM = AES_128
-                                                      ENCRYPTION BY SERVER CERTIFICATE MyServerCert;  
-                                                      ALTER DATABASE {1}
-                                                      SET ENCRYPTION ON;", pass, DB), conn);
+                                                      ENCRYPTION BY SERVER CERTIFICATE {Utility.DbName};  
+                                                      ALTER DATABASE {DB}
+                                                      SET ENCRYPTION ON;"), conn);
 
                 await conn.OpenAsync();
                 await command.ExecuteNonQueryAsync();
                 conn.Close();
-                return "encryption با موفقیت انجام شد";
+                return "Done!";
 
 
             }
@@ -167,68 +182,73 @@ namespace DBSec
                 return ex.Message;
             }
         }
+    
 
-        private async Task<string> RestoreCertificateAndDb(string dbNameToRecover, string IP, string DB, string pass, string masterKeyPath, string certificatePath, string privateKeyPath, string DbPath, string ldfPath, string fileType)
+        private async Task<string> RestoreCertificateAndDb(string dbNameToRecover, string IP, string DB, SecureString pass, string masterKeyPath, string certificatePath, string privateKeyPath, string DbPath, string ldfPath, string fileType)
         {
-
+            SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(IP, DB, pass));
 
             try
             {
 
-                SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(IP, DB, pass));
+               
                 string textCommad;
                 if (fileType == "mdf")
                 {
 
-                    textCommad = string.Format(@"use master;
+                    textCommad = string.Format($@"use master;
 
                               RESTORE MASTER KEY   
-                              FROM FILE = N'{0}'   
-                              DECRYPTION BY PASSWORD = '{5}'   
-                              ENCRYPTION BY PASSWORD = '{5}';  
-                              OPEN MASTER KEY DECRYPTION BY PASSWORD = '{5}'  
+                              FROM FILE = N'{masterKeyPath}'   
+                              DECRYPTION BY PASSWORD = '{Utility.ToInsecureString(pass)}'   
+                              ENCRYPTION BY PASSWORD = '{Utility.ToInsecureString(pass)}';  
+                              OPEN MASTER KEY DECRYPTION BY PASSWORD = '{Utility.ToInsecureString(pass)}'  
                               use master;
-                              create certificate MyServerCert
-                              from file = N'{1}'
+                              create certificate {Utility.DbName}
+                              from file = N'{certificatePath}'
                               with private key
-                                    ( file = N'{2}'
-                                        , decryption by password = N'AReallyStr0ngK#y4You'
+                                    ( file = N'{privateKeyPath}'
+                                        , decryption by password ={Utility.passPhrase}
                                     )
-                              CREATE DATABASE {6}   
-                              ON (FILENAME = '{3}'),   
-                                 (FILENAME = '{4}')   
-                              FOR ATTACH;", masterKeyPath, certificatePath, privateKeyPath, DbPath, ldfPath, pass, dbNameToRecover);
+                              CREATE DATABASE {dbNameToRecover}   
+                              ON (FILENAME = '{DbPath}'),   
+                                 (FILENAME = '{ldfPath}')   
+                              FOR ATTACH;");
                 }
                 else
                 {
-                    textCommad = string.Format(@"use master;
+                    textCommad = string.Format($@"use master;
                               RESTORE MASTER KEY   
-                              FROM FILE = N'{0}'   
-                              DECRYPTION BY PASSWORD = '{4}'
-                              ENCRYPTION BY PASSWORD = '{4}';  
-                              OPEN MASTER KEY DECRYPTION BY PASSWORD = '{4}'  
+                              FROM FILE = N'{masterKeyPath}'   
+                              DECRYPTION BY PASSWORD = '{dbNameToRecover}'
+                              ENCRYPTION BY PASSWORD = '{dbNameToRecover}';  
+                              OPEN MASTER KEY DECRYPTION BY PASSWORD = '{dbNameToRecover}'  
                               use master;
-                              create certificate MyServerCert
-                              from file = N'{1}'
+                              create certificate {Utility.DbName}
+                              from file = N'{certificatePath}'
                               with private key
-                                    ( file = N'{2}'
-                                        , decryption by password = N'AReallyStr0ngK#y4You'
+                                    ( file = N'{privateKeyPath}'
+                                        , decryption by password = {Utility.passPhrase}
                                     )
 
                               RESTORE DATABASE {5} 
 
-                              FROM DISK = '{3}' WITH REPLACE", masterKeyPath, certificatePath, privateKeyPath, DbPath, pass, dbNameToRecover);
+                              FROM DISK = '{3}' WITH REPLACE");
                 }
                 SqlCommand command = new SqlCommand(textCommad, conn);
                 await conn.OpenAsync();
-                command.ExecuteNonQuery();
+                await command.ExecuteNonQueryAsync();
                 return "با موفقیت انجام شد";
-                conn.Close();
+                
 
             }
             catch (Exception ex)
             {
                 return ex.Message;
+            }
+            finally
+            {
+                conn.Close();
             }
 
 
@@ -243,40 +263,40 @@ namespace DBSec
                 SerialNumber = serialNumber;
             }
         };
-        public async Task<dataOfTiny> ReadFromTiny()
-        {
-            dataOfTiny data = new dataOfTiny();
-            Tn.ServerIP = "127.0.0.1";
-            Tn.NetWorkINIT = true;
-            if (Tn.TinyErrCode == 0)
-            {
-                Tn.UserPassWord = TinyCode.Text;
-                Tn.ShowTinyInfo = true;
-                var dataInTiny = Tn.DataPartition.Split('@');
-                var serial = Tn.SerialNumber.Split('-');
-                var serialwithoutdash = string.Join("", serial);
-                return new dataOfTiny(Tn.DataPartition, serialwithoutdash);
-            }
-            else
-            {
-                Tn.Initialize = true;
-                if (Tn.TinyErrCode == 0)
-                {
-                    Tn.UserPassWord = TinyCode.Text;
-                    Tn.ShowTinyInfo = true;
-                    Tn.UserPassWord = TinyCode.Text;
-                    Tn.ShowTinyInfo = true;
-                    if (Tn.DataPartition == "") return new dataOfTiny("error", "error");
-                    var serial = Tn.SerialNumber.Split('-');
-                    var serialwithoutdash = string.Join("", serial);
-                    return new dataOfTiny(Tn.DataPartition, serialwithoutdash);
-                }
-                else
-                {
-                    return new dataOfTiny("error", "error");
-                }
-            }
-        }
+        //public async Task<dataOfTiny> ReadFromTiny()
+        //{
+        //    dataOfTiny data = new dataOfTiny();
+        //    Tn.ServerIP = "127.0.0.1";
+        //    Tn.NetWorkINIT = true;
+        //    if (Tn.TinyErrCode == 0)
+        //    {
+        //        Tn.UserPassWord = TinyCode.Text;
+        //        Tn.ShowTinyInfo = true;
+        //        var dataInTiny = Tn.DataPartition.Split('@');
+        //        var serial = Tn.SerialNumber.Split('-');
+        //        var serialwithoutdash = string.Join("", serial);
+        //        return new dataOfTiny(Tn.DataPartition, serialwithoutdash);
+        //    }
+        //    else
+        //    {
+        //        Tn.Initialize = true;
+        //        if (Tn.TinyErrCode == 0)
+        //        {
+        //            Tn.UserPassWord = TinyCode.Text;
+        //            Tn.ShowTinyInfo = true;
+        //            Tn.UserPassWord = TinyCode.Text;
+        //            Tn.ShowTinyInfo = true;
+        //            if (Tn.DataPartition == "") return new dataOfTiny("error", "error");
+        //            var serial = Tn.SerialNumber.Split('-');
+        //            var serialwithoutdash = string.Join("", serial);
+        //            return new dataOfTiny(Tn.DataPartition, serialwithoutdash);
+        //        }
+        //        else
+        //        {
+        //            return new dataOfTiny("error", "error");
+        //        }
+        //    }
+        //}
         private async void Form1_Load(object sender, EventArgs e)
         {
             // Bitmap image = new Bitmap(@"C:\Users\Administrator\Downloads\d_helix-css-gif-_50fps-selective_-1a.gif");
@@ -284,13 +304,13 @@ namespace DBSec
             //pictureBox1.Image = image;
             //  System.Configuration.ConfigurationManager.appSetting;
             radioButton2.Checked = true;
-            SecTab.Enabled = false;
-            panel3.Enabled = button8.Enabled = panel1.Enabled = false;
-           label32.Text= label23.Text = label25.Text= label24.Text = label19.Text = label31.Text = label30.Text = label26.Text = label27.Text = label28.Text = label22.Text = label2.Text = label7.Text = label3.Text = label10.Text = label11.Text = label12.Text = label9.Text = label20.Text = label21.Text = "";
+           // SecTab.Enabled = false;
+            panel3.Enabled = btn_testDb.Enabled ;
+            label32.Text= label23.Text = label25.Text= label24.Text = label19.Text = label31.Text = label30.Text = label26.Text = label27.Text = label28.Text = label22.Text = label2.Text = label7.Text = label3.Text = label10.Text = label11.Text = label12.Text = label9.Text = label20.Text = label21.Text = "";
             var internetDateTime=  await Utility.GetDateTimeFromInternetAsync();
             //MessageBox.Show(dateTime.ToLongDateString());
 
-            PersianCalendar s = new PersianCalendar();
+            
             var systemDateTime = DateTime.Now;
             //MessageBox.Show(now.ToLongDateString());
             var difference = internetDateTime - systemDateTime;
@@ -309,10 +329,10 @@ namespace DBSec
         {
             DialogResult res = folderBrowserDialog1.ShowDialog();
             if (res == DialogResult.OK)
-                textBox1.Text = folderBrowserDialog1.SelectedPath;
+                txt_certificateBackupPath.Text = folderBrowserDialog1.SelectedPath;
         }
 
-        private async void Button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
 
             try
@@ -325,7 +345,7 @@ namespace DBSec
                 {
 
                     var rawConstr = "provider=sqloledb.1;" + Utility.MakeConnectionStr(txt_ServerIP.Text, txt_DB.Text,
-                        Utility.ToInsecureString(Utility.DBPass));
+                       Utility.DBPass);
 
                     //var res = await Utility.TestDbConnection(rawConstr);
                     //if (res != "Ok")
@@ -340,7 +360,7 @@ namespace DBSec
 
 
                     ConfigXmlDocument configXmlDocument = new ConfigXmlDocument();
-                    configXmlDocument.Load(textBox3.Text);
+                    configXmlDocument.Load(txt_ConfigFilePath.Text);
                     var c = configXmlDocument.DocumentElement.GetElementsByTagName("appSettings").Item(0).ChildNodes;
 
                     bool found = false;
@@ -362,13 +382,13 @@ namespace DBSec
                     //foreach (XmlNode node in configXmlDocument.DocumentElement.GetElementsByTagName("userSettings").Item(0).ChildNodes)
                     //   "TinyServerID"
 
-                    configXmlDocument.Save(textBox3.Text);
+                    configXmlDocument.Save(txt_ConfigFilePath.Text);
                     label20.Text = "کانفیگ سرور ساخته شد";
 
                     var newnode = configXmlDocument.DocumentElement.GetElementsByTagName("Sinad.Properties.Settings").Item(0).ChildNodes[6];
-                    newnode.InnerXml = "<value>" + textBox9.Text + "</value>";
+                    newnode.InnerXml = "<value>" + txt_tinyAddress.Text + "</value>";
 
-                    configXmlDocument.Save(textBox3.Text + ".client");
+                    configXmlDocument.Save(txt_ConfigFilePath.Text + ".client");
                     label21.Text = "کانفیگ کلاینت ساخته شد";
 
                     label19.Text = "\u2714";
@@ -381,7 +401,7 @@ namespace DBSec
         }
 
 
-        private async void Button6_Click(object sender, EventArgs e)
+        private void Button6_Click(object sender, EventArgs e)
         {
             
             try
@@ -390,50 +410,16 @@ namespace DBSec
                 dataOfTiny dataOfTiny;
                 dataOfTiny.DataPartition = "error";
                 dataOfTiny.SerialNumber = "";
-                if (radioButton3.Checked)
-                {
-                    dataOfTiny = await ReadFromTiny();
-                }
-                else
-                {
-                    if (textBox14.Text.Trim() == "")
-                    {
-                        MessageBox.Show("لطفا اطلاعات را کامل کنید");
-                        textBox14.Focus();
-                    }
-                    else if (textBox16.Text.Trim() == "")
-                    {
-                        MessageBox.Show("لطفا اطلاعات را کامل کنید");
-                        textBox16.Focus();
-                    }
-                    else
-                    {
-                        dataOfTiny.DataPartition = "'@" + textBox14.Text;
-                        dataOfTiny.SerialNumber = textBox16.Text.Trim().Replace("-", "");
-                    }
-                }
+             
 
-                if (dataOfTiny.DataPartition == "error")
-                {
-                    panel1.Enabled = false;
-                    MessageBox.Show("خطا در خواندن");
-                    if (radioButton3.Checked) { TinyCode.BackColor = Color.Red; }
-                    else
-                    {
-                        textBox14.BackColor = Color.Red;
-                    }
-                    SecTab.Enabled = false;
-                    button6.BackColor = Color.Red;
-                }
-                else
-                {
+             
                     panel1.Enabled = true;
-                    var tmpPass =Utility.ToSecureString(dataOfTiny.DataPartition.Split('@')[1]);
-                    label25.Text =Utility.ToInsecureString(tmpPass).Split('-').First()+"_......_"+Utility.ToInsecureString(tmpPass).Split('-').Last();
-                    Utility.DBPass = tmpPass;
+                    //var tmpPass =Utility.ToSecureString(dataOfTiny.DataPartition.Split('@')[1]);
+                    //label25.Text =Utility.ToInsecureString(tmpPass).Split('-').First()+"_......_"+Utility.ToInsecureString(tmpPass).Split('-').Last();
+                    //Utility.DBPass = tmpPass;
                     textBox10.Text = dataOfTiny.DataPartition.Split('@')[1].ToString();
-                    Utility.passPhrase = Utility.ToSecureString(dataOfTiny.DataPartition.Split('@')[1]);
-                    Utility.PharmacySerial = Utility.ToSecureString(dataOfTiny.SerialNumber);
+                    //Utility.passPhrase = Utility.ToSecureString(dataOfTiny.DataPartition.Split('@')[1]);
+                    
                     SecTab.Enabled = true;
                     panel3.Enabled = false;
                     button6.BackColor = Color.Green;
@@ -446,7 +432,7 @@ namespace DBSec
                         textBox14.BackColor = Color.Lime;
                     }
 
-                }
+                
             }
 
             catch (Exception ex)
@@ -473,8 +459,7 @@ namespace DBSec
             }
             else
             {
-                var rawConstr = Utility.MakeConnectionStr(txt_ServerIP.Text, txt_DB.Text,
-                    Utility.ToInsecureString(Utility.DBPass));
+                var rawConstr = Utility.MakeConnectionStr(txt_ServerIP.Text, txt_DB.Text,Utility.DBPass);
                 var res = await Utility.TestDbConnection(rawConstr);
 
                 if (res != "Ok")
@@ -482,14 +467,14 @@ namespace DBSec
                     label10.ForeColor = Color.Red;
                     SecTab.Enabled = false;
                     label10.Text = "خطا در اتصال به دیتابیس " + res;
-                    button8.BackColor = Color.Red;
+                    btn_testDb.BackColor = Color.Red;
                     panel3.Enabled = true;
                     label7.Text = "ابتدا پسورد را تغییر دهید";
                     return;
                 }
                 else
                 {
-                    await CheckForDbEncrypted(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass));
+                    await CheckForDbEncrypted(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass);
 
                     //abel10.BackColor = Color.
                     //button8.BackColor = Color.Lime;
@@ -504,7 +489,7 @@ namespace DBSec
 
 
 
-        private async Task CheckForDbEncrypted(string IP, string DB, string pass)
+        private async Task CheckForDbEncrypted(string IP, string DB, SecureString pass)
         {
 
             var constr = Utility.MakeConnectionStr(IP, DB, pass);
@@ -523,13 +508,13 @@ namespace DBSec
                                                         ON db.database_id = dm.database_id WHERE name = '{0}'; ", DB), conn);
             await conn.OpenAsync();
             var dbreader = await command.ExecuteReaderAsync();
-            dbreader.Read();
+            await dbreader.ReadAsync();
             var test = (bool)dbreader[1];
             conn.Close();
             if (test == true)
             {
                 var res = MessageBox.Show("این دیتابیس قبلا رمز نگاری شده است");
-                await AddLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass));
+                await AddLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass);
                 conn.Close();
                 return;
             }
@@ -541,7 +526,7 @@ namespace DBSec
             command = new SqlCommand("use master;select COUNT(*) from sys.certificates where name='myservercert'", conn);
             await conn.OpenAsync();
             var reader = await command.ExecuteReaderAsync();
-            reader.Read();
+            await dbreader.ReadAsync();
             if ((int)reader[0] > 0)
             {
                 conn.Close();
@@ -552,7 +537,7 @@ namespace DBSec
                 {
                     command = new SqlCommand("use master;drop certificate myservercert;drop master key;", conn);
                     await conn.OpenAsync();
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                     MessageBox.Show("با موفقیت حذف شد");
                     conn.Close();
                 }
@@ -561,90 +546,58 @@ namespace DBSec
 
         }
 
-        private void Txt_DB_TextChanged(object sender, EventArgs e)
+       
+        private async void btn_encrypt_Click(object sender, EventArgs e)
         {
-            // SecTab.Enabled = false;
-        }
-
-        private async void Button7_Click(object sender, EventArgs e)
-        {
-            button7.Enabled = false;
+            btn_encrypt.Enabled = false;
             label26.Text = await EncryptDB(txt_ServerIP.Text, txt_DB.Text,
-                                 Utility.ToInsecureString(Utility.DBPass));
+                                 Utility.DBPass);
             label27.Text = await BackupCertificate(txt_ServerIP.Text, txt_DB.Text,
-                                 Utility.ToInsecureString(Utility.DBPass), textBox5.Text, Utility.ToInsecureString(Utility.PharmacySerial));
+                                 Utility.DBPass, txt_certificatePath.Text);
             label28.Text = "لطفا منتظر بمانید";
             label28.Text = await BackupDataBase(txt_ServerIP.Text, txt_DB.Text,
-                               Utility.ToInsecureString(Utility.DBPass), textBox5.Text, Utility.ToInsecureString(Utility.PharmacySerial));
-            if (checkBox2.Checked == true && textBox14.Text != "")
-            {
-                label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
-                    Utility.ToInsecureString(Utility.PharmacySerial) + ".pvk", pharmacySerial:
-                    Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
+                               Utility.DBPass, txt_certificatePath.Text);
+            btn_testDb.PerformClick();
+            //if (checkBox2.Checked == true && textBox14.Text != "")
+            //{
+            //    label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
+            //        Utility.DbName + ".pvk") + "\n";
 
-                label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
-                    Utility.ToInsecureString(Utility.PharmacySerial) + ".cer", pharmacySerial:
-                    Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
+            //    label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
+            //        Utility.DbName + ".cer") + "\n";
 
-                label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
-                    Utility.ToInsecureString(Utility.PharmacySerial) + ".key", pharmacySerial:
-                    Utility.ToInsecureString(Utility.PharmacySerial)) + "\n";
-                if (checkBox3.Checked)
-                {
-                    label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
-                                                                              Utility.ToInsecureString(Utility.PharmacySerial) +
-                                                                              ".bak",
-                                        pharmacySerial:Utility.ToInsecureString(Utility.PharmacySerial)) +
-                                                                            "\n";
-                }
+            //    label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
+            //        Utility.DbName + ".key") + "\n";
+            //    if (checkBox3.Checked)
+            //    {
+            //        label32.Text += await Utility.PutFileInFTP(localFilePath: textBox5.Text + "\\" +
+            //                                                                  Utility.DbName +
+            //                                                                  ".bak") +
+            //                                                                "\n";
+            //    }
 
-            }
+            //}
 
             label12.Text = "\u2714";
-            button7.Enabled = true;
+            btn_encrypt.Enabled = true;
 
         }
 
 
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "key files(*.key)|*.key";
             var res = openFileDialog1.ShowDialog();
             if (res == DialogResult.OK)
-                textBox2.Text = openFileDialog1.FileName;
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private async void Button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TabPage2_Click(object sender, EventArgs e)
-        {
-
+                txt_masterKeyRestorePath.Text = openFileDialog1.FileName;
         }
 
         private void Button11_Click(object sender, EventArgs e)
         {
             DialogResult res = folderBrowserDialog1.ShowDialog();
             if (res == DialogResult.OK)
-                textBox5.Text = folderBrowserDialog1.SelectedPath;
+                txt_certificatePath.Text = folderBrowserDialog1.SelectedPath;
         }
 
         private void Button12_Click(object sender, EventArgs e)
@@ -652,7 +605,7 @@ namespace DBSec
             openFileDialog1.Filter = "certificate files(*.cer)|*.cer";
             var res = openFileDialog1.ShowDialog();
             if (res == DialogResult.OK)
-                textBox6.Text = openFileDialog1.FileName;
+                txt_certificateRestorePath.Text = openFileDialog1.FileName;
         }
 
         private void Button13_Click(object sender, EventArgs e)
@@ -660,19 +613,19 @@ namespace DBSec
             openFileDialog1.Filter = "bak files(*.bak)|*.bak";
             var res = openFileDialog1.ShowDialog();
             if (res == DialogResult.OK)
-                textBox7.Text = openFileDialog1.FileName;
+                txt_dbRestorePath.Text = openFileDialog1.FileName;
         }
 
         private async void Button9_Click(object sender, EventArgs e)
         {
-            button9.Enabled = false;
-            var ldfpath = textBox7.Text.Remove(textBox7.Text.Length - 3, 3) + "ldf";
+            btn_restore.Enabled = false;
+            var ldfpath = txt_dbRestorePath.Text.Remove(txt_dbRestorePath.Text.Length - 3, 3) + "ldf";
             var filetype = "mdf";
             if (radioButton1.Checked == true) filetype = "mdf"; else filetype = "bak";
             label31.Text = "لطفا منتظر باشید";
-            label31.Text = await RestoreCertificateAndDb(textBox13.Text, txt_ServerIP.Text, "master", Utility.ToInsecureString(Utility.DBPass), textBox2.Text
-                , textBox6.Text, textBox8.Text, textBox7.Text, ldfpath, filetype);
-            button9.Enabled = true;
+            label31.Text = await RestoreCertificateAndDb(txt_dbRestoreName.Text, txt_ServerIP.Text, "master", Utility.DBPass, txt_masterKeyRestorePath.Text
+                , txt_certificateRestorePath.Text, txt_privateKeyRestorePath.Text, txt_dbRestorePath.Text, ldfpath, filetype);
+            btn_restore.Enabled = true;
         }
 
         private void Button14_Click(object sender, EventArgs e)
@@ -680,20 +633,16 @@ namespace DBSec
             openFileDialog1.Filter = "private key files(*.pvk)|*.pvk";
             var res = openFileDialog1.ShowDialog();
             if (res == DialogResult.OK)
-                textBox8.Text = openFileDialog1.FileName;
+                txt_privateKeyRestorePath.Text = openFileDialog1.FileName;
         }
 
         private async void button15_Click(object sender, EventArgs e)
         {
-
-
-
-            //// button8.BackColor = Color.Green;
             try
             {
-                await ChangePassAndRenameSa(txt_ServerIP.Text, txt_DB.Text, textBox4.Text);
-                await DisableAllUserButSa(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass));
-                await AddLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass));
+                await ChangePassAndRenameSa(txt_ServerIP.Text, txt_DB.Text, Utility.ToSecureString(textBox4.Text),"sa");
+                await DisableAllUserButSa(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass);
+                await AddLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass);
             }
             catch (Exception ex)
             {
@@ -701,7 +650,7 @@ namespace DBSec
             }
         }
 
-        private async Task AddLoginTrigger(string address, string db, string pass)
+        private async Task AddLoginTrigger(string address, string db, SecureString pass)
         {
             try
             {
@@ -723,17 +672,16 @@ namespace DBSec
                 }
                 else
                 {
-
-                MessageBox.Show(ex.Message);
+                   MessageBox.Show(ex.Message);
                 }
             }
 
         }
 
-        private async Task CrateLoginAuditTable(string address, string db, string pass)
+        private async Task CrateLoginAuditTable(string address, string db, SecureString pass)
         {
             SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass, "bastaniteb"));
-            conn.Open();
+            await conn.OpenAsync();
             //--Step1: Create Audit Table
             SqlCommand command = new SqlCommand(@"USE master;
             IF Not EXISTS(SELECT * FROM   INFORMATION_SCHEMA.TABLES WHERE  TABLE_NAME = 'loginAuditTable') 
@@ -742,18 +690,18 @@ namespace DBSec
                 data XML,
                 program_name nvarchar(128)
             );", conn);
-            command.ExecuteNonQuery();
+            await command.ExecuteNonQueryAsync();
             conn.Close();
         }
 
 
-        private async Task CreateLoginAuditView(string address, string db, string pass)
+        private async Task CreateLoginAuditView(string address, string db, SecureString pass)
         {
             try
             {
 
                 SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass, "bastaniteb"));
-                conn.Open();
+                await conn.OpenAsync();
                 SqlCommand command = new SqlCommand(@"
                 CREATE VIEW dbo.loginAuditView
                 AS
@@ -770,7 +718,7 @@ namespace DBSec
                       ,data.value('(/EVENT_INSTANCE/SID)[1]', 'nvarchar(85)') AS SID
                 FROM master.dbo.loginAuditTable;
                 ", conn);
-                command.ExecuteNonQuery();
+                await command.ExecuteNonQueryAsync();
                 conn.Close();
             }
             catch (Exception)
@@ -779,16 +727,18 @@ namespace DBSec
                 throw;
             }
         }
-        private async Task CreateLoginTrigger(string address, string db, string pass, string applications)
+
+
+        private async Task CreateLoginTrigger(string address, string db, SecureString pass, string applications)
         {
 
             SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass, "bastaniteb"));
-            conn.Open();
+            await conn.OpenAsync();
             SqlCommand command = new SqlCommand(@"IF EXISTS(
     SELECT * FROM master.sys.server_triggers
     WHERE parent_class_desc = 'SERVER' AND name = N'Allow_only_Application_Login_Trigger')
 DROP TRIGGER [Allow_only_Application_Login_Trigger] ON ALL SERVER;", conn);
-            command.ExecuteNonQuery();
+            await command.ExecuteNonQueryAsync();
 
             command = new SqlCommand(string.Format(@"
 CREATE TRIGGER Allow_only_Application_Login_Trigger
@@ -823,25 +773,25 @@ IF @AppName not in  ({0})
     END 
 END;", applications), conn);
 
-            command.ExecuteNonQuery();
+            await command.ExecuteNonQueryAsync();
             conn.Close();
 
         }
 
-        private async Task ChangePassAndRenameSa(string address, string db, string pass)
+        private async Task ChangePassAndRenameSa(string address, string db, SecureString pass, string newSaUserName)
         {
             try
             {
                 SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass, "sa"));
-                conn.Open();
+                await conn.OpenAsync();
                 SqlCommand comm = new SqlCommand(
 
-                  string.Format(@"USE MASTER
-                                  ALTER LOGIN sa WITH NAME = BastaniTeb,
+                  string.Format($@"USE MASTER
+                                  ALTER LOGIN sa WITH NAME = {newSaUserName},
                                   PASSWORD = '{0}'; ", Utility.ToInsecureString(Utility.DBPass)), conn);
 
 
-                comm.ExecuteNonQuery();
+                await comm.ExecuteNonQueryAsync();
                 textBox4.BackColor = Color.Lime;
                 label11.Text = "\u2714";
 
@@ -850,16 +800,16 @@ END;", applications), conn);
             catch (Exception ex)
             {
 
-                SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass, "bastaniteb"));
-                conn.Open();
+                SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass, newSaUserName));
+                await conn.OpenAsync();
                 SqlCommand comm = new SqlCommand(
 
-                  string.Format(@"USE MASTER
-                                  ALTER LOGIN BastaniTeb  WITH NAME = BastaniTeb,
+                  string.Format($@"USE MASTER
+                                  ALTER LOGIN BastaniTeb  WITH NAME = {newSaUserName},
                                   PASSWORD = '{0}'; ", Utility.ToInsecureString(Utility.DBPass)), conn);
 
 
-                comm.ExecuteNonQuery();
+                await comm.ExecuteNonQueryAsync();
                 textBox4.BackColor = Color.Lime;
                 label11.Text = "\u2714";
 
@@ -868,8 +818,11 @@ END;", applications), conn);
             }
 
         }
-        public async Task DisableAllUserButSa(string address, string db, string pass)
+
+        public async Task DisableAllUserButSa(string address, string db, SecureString pass)
         {
+            SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass));
+
             try
             {
                 string strCommand = string.Format(@"SELECT 'use master;Deny connect to ' + QUOTENAME(sp.name) 
@@ -878,14 +831,13 @@ END;", applications), conn);
                                   AND sp.is_disabled = 0
                                   AND sp.type IN ('G','s','u') and name<> '##MS_PolicyTsqlExecutionLogin##' ;", db);
 
-                SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass));
-
+            
                 SqlCommand command = new SqlCommand(strCommand, conn);
                 await conn.OpenAsync();
-                var reader = command.ExecuteReader();
+                var reader = await command.ExecuteReaderAsync();
 
                 List<string> commands = new List<string>();
-                while (reader.Read())
+                while (await reader.ReadAsync())
                 {
                     commands.Add(reader[0].ToString());
 
@@ -901,33 +853,35 @@ END;", applications), conn);
                                                         );");
                 command = new SqlCommand(strCommand, conn);
                 reader.Close();
-                reader = command.ExecuteReader();
+                reader = await command.ExecuteReaderAsync();
 
 
-                while (reader.Read())
+                while (await reader.ReadAsync())
                 {
                     commands.Add(reader[0].ToString());
 
                 }
                 conn.Close();
-                conn.Open();
+                await conn.OpenAsync();
                 SqlCommand alterLoginCommand;
-                commands.ForEach(c =>
+                commands.ForEach(async c =>
                 {
                     alterLoginCommand = new SqlCommand(c, conn);
-                    alterLoginCommand.ExecuteNonQuery();
+                    await alterLoginCommand.ExecuteNonQueryAsync();
                 });
 
 
 
 
                 MessageBox.Show("تمامی کاربران غیرفعال شدند");
-                conn.Close();
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            finally
+            { conn.Close(); }
 
         }
 
@@ -939,8 +893,8 @@ END;", applications), conn);
 
             if (res == DialogResult.OK)
             {
-                textBox3.Text = openFileDialog1.FileName;
-                textBox9.Text = Utility.GetLocalIPAddress();
+                txt_ConfigFilePath.Text = openFileDialog1.FileName;
+                txt_tinyAddress.Text = Utility.GetLocalIPAddress();
             }
         }
 
@@ -954,75 +908,54 @@ END;", applications), conn);
             openFileDialog1.Filter = "Backup files(*.bak)|*.bak";
         }
 
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private async void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private async void comboBox1_Enter(object sender, EventArgs e)
         {
+            string constr = Utility.MakeConnectionStr(txt_ServerIP.Text, "Master", Utility.DBPass);
+            SqlConnection conn = new SqlConnection(constr);
+
             try
             {
                 txt_DB.Text = "";
                 txt_DB.Items.Clear();
-                string constr = Utility.MakeConnectionStr(txt_ServerIP.Text, "Master", Utility.ToInsecureString(Utility.DBPass));
-                SqlConnection conn = new SqlConnection(constr);
-                SqlCommand command = new SqlCommand("SELECT name FROM master.sys.databases", conn);
-                conn.Open();
-                var reader = command.ExecuteReader();
-                while (reader.Read())
+                  SqlCommand command = new SqlCommand("SELECT name FROM master.sys.databases", conn);
+                Utility.DBPass = Utility.ToSecureString(txt_DbPass.Text);
+
+                await conn.OpenAsync();
+                var reader = await command.ExecuteReaderAsync();
+                while (await reader.ReadAsync())
                 {
                     txt_DB.Items.Add(reader[0]);
                 }
-                conn.Close();
-                button8.Enabled = true;
+               
+                btn_testDb.Enabled = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("خطایی رخ داده.لطفا آدرس را چک نمایید");
                 panel3.Enabled = true;
-                button8.Enabled = false;
+                btn_testDb.Enabled = false;
             }
+            finally { conn.Close(); }
         }
 
-        private void button10_Click_2(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private async void button10_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private bool sqlOpen = false;
         private async void button16_Click(object sender, EventArgs e)
         {
             if (sqlOpen == false)
             {
-
-
                 try
                 {
 
-                    await CreateLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass),
+                    await CreateLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass,
                         "'" + Utility.ToInsecureString(Utility.DBPass) + "'" +
                         ",'Microsoft SQL Server Management Studio'");
                     /////unlocksql
-                    button16.BackColor = Color.OrangeRed;
+                    btn_unlockSql.BackColor = Color.OrangeRed;
                     label24.Text = "SQL is unlocked Now...";
-                    button16.Text = "Lock SQL";
+                    btn_unlockSql.Text = "Lock SQL";
                     sqlOpen = true;
                 }
                 catch (Exception ex)
@@ -1036,20 +969,19 @@ END;", applications), conn);
             }
             else
             {
-                await CreateLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.ToInsecureString(Utility.DBPass), "'" + Utility.ToInsecureString(Utility.DBPass) + "'");
+                await CreateLoginTrigger(txt_ServerIP.Text, txt_DB.Text, Utility.DBPass, "'" + Utility.ToInsecureString(Utility.DBPass) + "'");
 
-                button16.BackColor = Color.Red;
+                btn_unlockSql.BackColor = Color.Red;
                 label24.Text = "";
-                button16.Text = "Unlock SQL";
+                btn_unlockSql.Text = "Unlock SQL";
                 ////locksql
                 sqlOpen = false;
             }
         }
-        private async Task PutMaintenancePlan(string address, string db, string pass, string pathToBackUp, string mirrorBackUp)
+
+        private async Task PutMaintenancePlan(string address, string db, SecureString pass, string pathToBackUp, string mirrorBackUp)
         {
-            try
-            {
-                var textCommand = string.Format(@"USE msdb ;  
+            var textCommand = string.Format(@"USE msdb ;  
                                                     EXEC dbo.sp_add_job  
                                                         @job_name = N'Weekly Sinad Data Backup' ;  
                                                     EXEC sp_add_jobstep  
@@ -1096,99 +1028,46 @@ END;", applications), conn);
   
                                                     EXEC dbo.sp_add_jobserver  
                                                         @job_name = N'Daily Sinad Data Backup';");
-                SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass));
-                SqlCommand command = new SqlCommand(textCommand, conn);
+            SqlConnection conn = new SqlConnection(Utility.MakeConnectionStr(address, db, pass));
+            SqlCommand command = new SqlCommand(textCommand, conn);
+            try
+            {
+              
                 await conn.OpenAsync();
-                command.ExecuteNonQuery();
-                conn.Close();
+                await command.ExecuteNonQueryAsync();
+                
                 MessageBox.Show("با موفقیت انجام شد");
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
+            finally
+            {
+                conn.Close();
+            }
         }
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-            //if (folderBrowserDialog1.ShowDialog() != DialogResult.Cancel)
-            //{
-            //    textBox11.Text = folderBrowserDialog1.SelectedPath;
-            //}
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            //if (folderBrowserDialog1.ShowDialog() != DialogResult.Cancel)
-            //{
-            //    textBox10.Text = folderBrowserDialog1.SelectedPath;
-            //}
-        }
-        static int retry = 0;
-        private async void button19_Click(object sender, EventArgs e)
-        {
-
-            //if(Utility.CheckTheFtpConnection( Utility.ftpAddress+ "checkconnection.txt", ftpUsername_txt.Text,ftppassword_txt.Text)=="Ok")
-
-        }
-
+      
+      
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             checkBox4.Enabled = checkBox1.Checked ? true : false;
            
         }
 
-        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_FormClosed_1(object sender, FormClosedEventArgs e)
+        private async void Form1_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             if (sqlOpen)
             {
-                CreateLoginTrigger(txt_ServerIP.Text, txt_DB.Text, 
-                    Utility.ToInsecureString(Utility.DBPass),
+               await  CreateLoginTrigger(txt_ServerIP.Text, txt_DB.Text, 
+                    Utility.DBPass,
                     "'" + 
                     Utility.ToInsecureString(Utility.DBPass) +
                     "'");
             }
 
             Application.ExitThread();
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.ExitThread();
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
@@ -1248,10 +1127,10 @@ END;", applications), conn);
 
                 File.WriteAllText(fileName,cName);
                  
-                string res= await Utility.PutFileInFTP(fileName,"test");
+                //string res= await Utility.PutFileInFTP(fileName,"test");
                 
 
-                MessageBox.Show(res);
+               // MessageBox.Show(res);
             }
             catch (Exception ex)
             {
@@ -1259,19 +1138,13 @@ END;", applications), conn);
             }
         }
 
-        private void DsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-            checkBox3.Enabled = checkBox2.Checked ? true : false;
+            chk_copyDbToHost.Enabled = chk_copyToHost.Checked ? true : false;
         }
 
-        private void CheckBox4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
